@@ -5,6 +5,7 @@ import com.context.ChoosedPalette;
 import com.context.StateColors;
 import com.view.MainSite;
 import com.view.ingresar.Login;
+import com.utils.Messages;
 import javax.swing.border.LineBorder;
 
 /**
@@ -89,17 +90,17 @@ public class Exit extends javax.swing.JFrame {
 
         title.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        title.setText("Cerrar Sesión");
+        title.setText("Close Session");
         content.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 450, -1));
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text1.setText("¿Estás seguro de que quieres salir?");
+        text1.setText("Are you sure you want to exit?");
         content.add(text1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 450, -1));
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text2.setText("Se cerrará la sesión actual para iniciar de nuevo.");
+        text2.setText("The current session will be closed to start again.");
         content.add(text2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 450, -1));
 
         container1.setkEndColor(new java.awt.Color(204, 204, 204));

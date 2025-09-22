@@ -5,6 +5,7 @@ import com.context.ChoosedPalette;
 import com.helper.PacienteHelper;
 import com.utils.CustomScrollBar;
 import com.utils.Styles;
+import com.utils.Messages;
 import com.utils.Tools;
 import java.util.ArrayList;
 import javax.swing.JPanel;
@@ -278,7 +279,7 @@ public class NuevoPaciente extends Styles {
         text3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text3.setForeground(new java.awt.Color(69, 98, 255));
         text3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text3.setText("Ficha de odontología");
+        text3.setText(Messages.get("paciente.odontologia") + " Chart");
         text3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout odontologiaContainerLayout = new javax.swing.GroupLayout(odontologiaContainer);
@@ -356,7 +357,7 @@ public class NuevoPaciente extends Styles {
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Agrega la información correspondiente del paciente");
+        text1.setText("Add the corresponding patient information");
 
         title1.setBackground(new java.awt.Color(0, 0, 0));
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N

@@ -7,6 +7,7 @@ import com.k33ptoo.components.KGradientPanel;
 import com.utils.CustomScrollBar;
 import com.utils.PanelRound;
 import com.utils.Styles;
+import com.utils.Messages;
 import com.utils.Tools;
 import java.awt.Color;
 import java.util.ArrayList;
@@ -84,7 +85,7 @@ public class SideBarNavigation extends Styles {
                 selectionButton(buttonActividad, sideActividad, actividadLabel, actividadIcon, "actualizar.png", 15, 27);
                 break;
             default:
-                System.out.println("Opcion fuera de alcance");
+                System.out.println("Option out of range");
         }
     }
     
@@ -92,31 +93,31 @@ public class SideBarNavigation extends Styles {
         switch (number) {
             case 1:
                 selectionButton(buttonDashBoard, sideDashboard, dashboardLabel, dashboardIcon, "aplicaciones.png", 15, 27);
-                ApplicationContext.mainInterface.changeTitle("Dashboard");
+                ApplicationContext.mainInterface.changeTitle(Messages.get("nav.dashboard"));
                 ApplicationContext.mainInterface.mostrarPanel(ApplicationContext.dashboard);
                 break;
             case 2:
                 selectionButton(buttonPacientes, sidePacientes, pacientesLabel, pacientesIcon, "usuarios.png", 15, 27);
-                ApplicationContext.mainInterface.changeTitle("Pacientes");
+                ApplicationContext.mainInterface.changeTitle(Messages.get("nav.pacientes"));
                 ApplicationContext.mainInterface.mostrarPanel(ApplicationContext.pacientes);
                 break;
             case 3:
                 selectionButton(buttonAgenda, sideAgenda, agendaLabel, agendaIcon, "capas.png", 15, 27);
-                ApplicationContext.mainInterface.changeTitle("Agenda");
+                ApplicationContext.mainInterface.changeTitle(Messages.get("nav.agenda"));
                 ApplicationContext.mainInterface.mostrarPanel(ApplicationContext.agendas);
                 break;
             case 4:
                 selectionButton(buttonOrganizacion, sideOrganizacion, organizacionLabel, organizacionIcon, "diente.png", 15, 27);
-                ApplicationContext.mainInterface.changeTitle("Organización");
+                ApplicationContext.mainInterface.changeTitle("Organization");
                 ApplicationContext.mainInterface.mostrarPanel(ApplicationContext.asistentes);
                 break;
             case 5:
                 selectionButton(buttonActividad, sideActividad, actividadLabel, actividadIcon, "actualizar.png", 15, 27);
-                ApplicationContext.mainInterface.changeTitle("Actividad");
+                ApplicationContext.mainInterface.changeTitle(Messages.get("dashboard.actividad"));
                 ApplicationContext.mainInterface.mostrarPanel(ApplicationContext.actividad);
                 break;
             default:
-                throw new Error("Opcion fuera de alcance");
+                throw new Error("Option out of range");
         }
     }
     
@@ -161,7 +162,7 @@ public class SideBarNavigation extends Styles {
                 dark();
                 break;
             default:
-                System.out.println("Invalido");
+                System.out.println("Invalid");
         }
     }
 
@@ -357,7 +358,7 @@ public class SideBarNavigation extends Styles {
         configuracionesIcon.setMinimumSize(new java.awt.Dimension(35, 37));
 
         configuracionesLabel.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
-        configuracionesLabel.setText("Cerrar Sesión");
+        configuracionesLabel.setText("Close Session");
         configuracionesLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout buttonConfiguracionesLayout = new javax.swing.GroupLayout(buttonConfiguraciones);
@@ -478,7 +479,7 @@ public class SideBarNavigation extends Styles {
 
         menuPrincipal.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         menuPrincipal.setForeground(new java.awt.Color(153, 153, 153));
-        menuPrincipal.setText("Menu principal");
+        menuPrincipal.setText("Main Menu");
         titlePosition.add(menuPrincipal, java.awt.BorderLayout.CENTER);
 
         jPanel9.add(titlePosition);
@@ -542,7 +543,7 @@ public class SideBarNavigation extends Styles {
 
         dashboardLabel.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
         dashboardLabel.setForeground(new java.awt.Color(69, 98, 255));
-        dashboardLabel.setText("Dashboard");
+        dashboardLabel.setText(Messages.get("nav.dashboard"));
         dashboardLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout buttonDashBoardLayout = new javax.swing.GroupLayout(buttonDashBoard);
@@ -582,7 +583,7 @@ public class SideBarNavigation extends Styles {
         actividadIcon.setMinimumSize(new java.awt.Dimension(35, 37));
 
         actividadLabel.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
-        actividadLabel.setText("Actividad");
+        actividadLabel.setText(Messages.get("dashboard.actividad"));
         actividadLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout buttonActividadLayout = new javax.swing.GroupLayout(buttonActividad);
@@ -641,7 +642,7 @@ public class SideBarNavigation extends Styles {
         organizacionIcon.setMinimumSize(new java.awt.Dimension(35, 37));
 
         organizacionLabel.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
-        organizacionLabel.setText("Organización");
+        organizacionLabel.setText("Organization");
         organizacionLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout buttonOrganizacionLayout = new javax.swing.GroupLayout(buttonOrganizacion);
@@ -700,7 +701,7 @@ public class SideBarNavigation extends Styles {
         agendaIcon.setMinimumSize(new java.awt.Dimension(35, 37));
 
         agendaLabel.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
-        agendaLabel.setText("Agenda");
+        agendaLabel.setText(Messages.get("nav.agenda"));
         agendaLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout buttonAgendaLayout = new javax.swing.GroupLayout(buttonAgenda);
@@ -760,7 +761,7 @@ public class SideBarNavigation extends Styles {
         pacientesIcon.setMinimumSize(new java.awt.Dimension(35, 37));
 
         pacientesLabel.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
-        pacientesLabel.setText("Pacientes");
+        pacientesLabel.setText(Messages.get("nav.pacientes"));
         pacientesLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout buttonPacientesLayout = new javax.swing.GroupLayout(buttonPacientes);

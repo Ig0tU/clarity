@@ -4,6 +4,7 @@ import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.helper.AsistenteHelper;
 import com.utils.Styles;
+import com.utils.Messages;
 import com.utils.Tools;
 import javax.swing.JPanel;
 import javax.swing.border.MatteBorder;
@@ -242,11 +243,11 @@ public class Asistentes extends Styles {
 
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 20)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Asistentes de la organización");
+        title1.setText(Messages.get("assistant.asistentes"));
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Información y asistentes");
+        text1.setText("Information and assistants");
 
         container1.setkEndColor(new java.awt.Color(0, 0, 0));
         container1.setkStartColor(new java.awt.Color(0, 0, 0));
@@ -820,7 +821,7 @@ public class Asistentes extends Styles {
 
         text5.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text5.setForeground(new java.awt.Color(153, 153, 153));
-        text5.setText("Género");
+        text5.setText(Messages.get("pacientes.genero"));
 
         javax.swing.GroupLayout jPanel38Layout = new javax.swing.GroupLayout(jPanel38);
         jPanel38.setLayout(jPanel38Layout);

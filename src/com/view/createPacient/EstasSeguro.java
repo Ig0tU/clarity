@@ -2,6 +2,7 @@ package com.view.createPacient;
 
 import com.context.ChoosedPalette;
 import com.helper.PacienteHelper;
+import com.utils.Messages;
 import com.utils.Tools;
 
 /**
@@ -71,7 +72,7 @@ public class EstasSeguro extends javax.swing.JFrame {
 
         title.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        title.setText("Algunos datos estan vacíos");
+        title.setText(Messages.get("msg.camposObligatorios"));
         content.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 450, -1));
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
@@ -81,7 +82,7 @@ public class EstasSeguro extends javax.swing.JFrame {
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text2.setText("Hay datos que no han sido especificados todavía");
+        text2.setText("There is data that has not been specified yet");
         content.add(text2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 220, 450, -1));
 
         icon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

@@ -5,6 +5,7 @@ import com.context.ChoosedPalette;
 import com.context.SesionUsuario;
 import com.model.AsistenteModel;
 import com.model.DoctorModel;
+import com.utils.Messages;
 import com.utils.Styles;
 import com.utils.Tools;
 
@@ -222,12 +223,12 @@ public final class Welcome extends Styles {
         textClinica.setBackground(new java.awt.Color(255, 255, 255));
         textClinica.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 30)); // NOI18N
         textClinica.setForeground(new java.awt.Color(0, 0, 0));
-        textClinica.setText("Gestión clínica");
+        textClinica.setText(Messages.get("welcome.clinica"));
 
         textBienvenido.setBackground(new java.awt.Color(255, 255, 255));
         textBienvenido.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 30)); // NOI18N
         textBienvenido.setForeground(new java.awt.Color(102, 51, 255));
-        textBienvenido.setText("Bienvenido a");
+        textBienvenido.setText(Messages.get("welcome.bienvenido"));
         textBienvenido.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 textBienvenidoMouseEntered(evt);
@@ -237,7 +238,7 @@ public final class Welcome extends Styles {
         textComencemos.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 16)); // NOI18N
         textComencemos.setForeground(new java.awt.Color(0, 0, 0));
         textComencemos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        textComencemos.setText("¡Comencemos!");
+        textComencemos.setText(Messages.get("welcome.comencemos"));
 
         textInfo2.setBackground(new java.awt.Color(255, 255, 255));
         textInfo2.setForeground(new java.awt.Color(102, 102, 102));
@@ -245,14 +246,14 @@ public final class Welcome extends Styles {
 
         textGestion.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         textGestion.setForeground(new java.awt.Color(153, 153, 153));
-        textGestion.setText("Gestion clinica especializada, seleccione una de las opciones");
+        textGestion.setText(Messages.get("welcome.gestion"));
         textGestion.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         textInfo2.add(textGestion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 360, -1));
 
         textGestion2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         textGestion2.setForeground(new java.awt.Color(153, 153, 153));
         textGestion2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        textGestion2.setText("a continuación para ingresar");
+        textGestion2.setText(Messages.get("welcome.gestion2"));
         textGestion2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         textInfo2.add(textGestion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, 20));
 
@@ -412,12 +413,12 @@ public final class Welcome extends Styles {
         soyDoctor.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 16)); // NOI18N
         soyDoctor.setForeground(new java.awt.Color(0, 0, 0));
         soyDoctor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        soyDoctor.setText("Soy, Doctor");
+        soyDoctor.setText(Messages.get("welcome.soyDoctor"));
 
         textDoctor.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         textDoctor.setForeground(new java.awt.Color(153, 153, 153));
         textDoctor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        textDoctor.setText("Gestion general para doctores");
+        textDoctor.setText(Messages.get("welcome.textDoctor"));
 
         doctorIcon.setkBorderRadius(100);
         doctorIcon.setkEndColor(new java.awt.Color(153, 0, 153));
@@ -534,12 +535,12 @@ public final class Welcome extends Styles {
         soyAsistente.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 16)); // NOI18N
         soyAsistente.setForeground(new java.awt.Color(0, 0, 0));
         soyAsistente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        soyAsistente.setText("Soy, Asistente");
+        soyAsistente.setText(Messages.get("welcome.soyAsistente"));
 
         textAsistente.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         textAsistente.setForeground(new java.awt.Color(153, 153, 153));
         textAsistente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        textAsistente.setText("Gestion general para asistentes");
+        textAsistente.setText(Messages.get("welcome.textAsistente"));
 
         asistenteIcon.setkBorderRadius(100);
         asistenteIcon.setkStartColor(new java.awt.Color(0, 102, 204));

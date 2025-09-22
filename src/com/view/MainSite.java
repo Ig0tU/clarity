@@ -1,6 +1,7 @@
 package com.view;
 
 import com.context.ChoosedPalette;
+import com.utils.Messages;
 import com.utils.Tools;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -70,7 +71,7 @@ public class MainSite extends javax.swing.JFrame {
         dynamicContent = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Gestion clinica");
+        setTitle(Messages.get("welcome.clinica"));
         setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(1280, 720));
         setUndecorated(true);
@@ -165,7 +166,7 @@ public class MainSite extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 8)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText(" Clinica - Sistema de gestión");
+        jLabel1.setText(Messages.get("welcome.clinica") + " - " + Messages.get("welcome.gestion"));
         jLabel1.setPreferredSize(new java.awt.Dimension(180, 16));
         windowControls.add(jLabel1, java.awt.BorderLayout.LINE_START);
 
