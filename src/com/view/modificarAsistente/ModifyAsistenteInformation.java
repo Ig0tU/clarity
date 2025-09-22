@@ -3,6 +3,7 @@ package com.view.modificarAsistente;
 import com.context.ChoosedPalette;
 import com.k33ptoo.components.KGradientPanel;
 import com.model.AsistenteModel;
+import com.utils.Messages;
 import com.utils.Tools;
 import com.view.createPacient.NewContext;
 import java.time.LocalDateTime;
@@ -489,12 +490,12 @@ public class ModifyAsistenteInformation extends NewContext {
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Datos e información sobre el paciente");
+        text1.setText("Data and information about the assistant");
 
         title1.setBackground(new java.awt.Color(0, 0, 0));
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Datos e información");
+        title1.setText("Data and information");
 
         kGradientPanel3.setkBorderRadius(100);
         kGradientPanel3.setkEndColor(new java.awt.Color(69, 98, 255));
@@ -587,7 +588,7 @@ public class ModifyAsistenteInformation extends NewContext {
         container1.add(jPanel45, java.awt.BorderLayout.LINE_START);
 
         textField1.setBackground(new java.awt.Color(255, 255, 255));
-        textField1.setText("Ingresar nombres");
+        textField1.setText("Enter names");
         textField1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField1.setOpaque(false);
         textField1.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -599,7 +600,7 @@ public class ModifyAsistenteInformation extends NewContext {
 
         title3.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title3.setForeground(new java.awt.Color(0, 0, 0));
-        title3.setText("Nombres");
+        title3.setText(Messages.get("asistentes.nombres"));
 
         advertenciaNombre.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         advertenciaNombre.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
@@ -679,7 +680,7 @@ public class ModifyAsistenteInformation extends NewContext {
         container7.add(jPanel47, java.awt.BorderLayout.LINE_START);
 
         textField5.setBackground(new java.awt.Color(255, 255, 255));
-        textField5.setText("Ingresar apellidos");
+        textField5.setText("Enter last names");
         textField5.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField5.setOpaque(false);
         textField5.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -691,7 +692,7 @@ public class ModifyAsistenteInformation extends NewContext {
 
         title2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title2.setForeground(new java.awt.Color(0, 0, 0));
-        title2.setText("Apellidos");
+        title2.setText(Messages.get("asistentes.apellidos"));
 
         advertenciaApellidos.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         advertenciaApellidos.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
@@ -728,7 +729,7 @@ public class ModifyAsistenteInformation extends NewContext {
 
         title9.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title9.setForeground(new java.awt.Color(0, 0, 0));
-        title9.setText("Fecha de nacimiento");
+        title9.setText(Messages.get("paciente.fechaNacimiento"));
 
         container2.setkEndColor(new java.awt.Color(204, 204, 204));
         container2.setkFillBackground(false);
@@ -898,7 +899,7 @@ public class ModifyAsistenteInformation extends NewContext {
 
         textField4.setBackground(new java.awt.Color(255, 255, 255));
         textField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        textField4.setText("aaaa");
+        textField4.setText("yyyy");
         textField4.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField4.setOpaque(false);
         textField4.addActionListener(new java.awt.event.ActionListener() {
@@ -1002,7 +1003,7 @@ public class ModifyAsistenteInformation extends NewContext {
         container8.add(jPanel49, java.awt.BorderLayout.LINE_START);
 
         textField6.setBackground(new java.awt.Color(255, 255, 255));
-        textField6.setText("Ingresar edad");
+        textField6.setText("Enter age");
         textField6.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField6.setOpaque(false);
         textField6.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -1014,7 +1015,7 @@ public class ModifyAsistenteInformation extends NewContext {
 
         title4.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title4.setForeground(new java.awt.Color(0, 0, 0));
-        title4.setText("Edad");
+        title4.setText(Messages.get("pacientes.edad"));
 
         advertenciaEdad.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         advertenciaEdad.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
@@ -1094,7 +1095,7 @@ public class ModifyAsistenteInformation extends NewContext {
         container9.add(jPanel51, java.awt.BorderLayout.LINE_START);
 
         textField7.setBackground(new java.awt.Color(255, 255, 255));
-        textField7.setText("Ingresar correo electronico");
+        textField7.setText("Enter email");
         textField7.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField7.setOpaque(false);
         textField7.addActionListener(new java.awt.event.ActionListener() {
@@ -1106,7 +1107,7 @@ public class ModifyAsistenteInformation extends NewContext {
 
         title5.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title5.setForeground(new java.awt.Color(0, 0, 0));
-        title5.setText("Correo Electronico");
+        title5.setText(Messages.get("paciente.correoElectronico"));
 
         advertenciaCorreo.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         advertenciaCorreo.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
@@ -1186,14 +1187,14 @@ public class ModifyAsistenteInformation extends NewContext {
         container6.add(jPanel53, java.awt.BorderLayout.LINE_START);
 
         textField8.setBackground(new java.awt.Color(255, 255, 255));
-        textField8.setText("Ingresar contraseña");
+        textField8.setText("Enter password");
         textField8.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField8.setOpaque(false);
         container6.add(textField8, java.awt.BorderLayout.CENTER);
 
         title6.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title6.setForeground(new java.awt.Color(0, 0, 0));
-        title6.setText("Contraseña");
+        title6.setText(Messages.get("label.contrasena"));
 
         advertenciaContrasena.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         advertenciaContrasena.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
@@ -1230,7 +1231,7 @@ public class ModifyAsistenteInformation extends NewContext {
 
         title7.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title7.setForeground(new java.awt.Color(0, 0, 0));
-        title7.setText("Género");
+        title7.setText(Messages.get("pacientes.genero"));
 
         generoCombo.setBackground(new java.awt.Color(255, 255, 255));
         generoCombo.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
@@ -1390,12 +1391,12 @@ public class ModifyAsistenteInformation extends NewContext {
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setForeground(new java.awt.Color(153, 153, 153));
-        text2.setText("Dirección y contacto sobre el paciente");
+        text2.setText("Address and contact information about the assistant");
 
         title10.setBackground(new java.awt.Color(0, 0, 0));
         title10.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title10.setForeground(new java.awt.Color(0, 0, 0));
-        title10.setText("Dirección y contacto");
+        title10.setText("Address and contact");
 
         kGradientPanel4.setkBorderRadius(100);
         kGradientPanel4.setkEndColor(new java.awt.Color(69, 98, 255));
@@ -1491,7 +1492,7 @@ public class ModifyAsistenteInformation extends NewContext {
         container10.add(jPanel68, java.awt.BorderLayout.LINE_START);
 
         textField9.setBackground(new java.awt.Color(255, 255, 255));
-        textField9.setText("Ingresar telefono celular");
+        textField9.setText("Enter cell phone");
         textField9.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField9.setOpaque(false);
         textField9.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -1503,7 +1504,7 @@ public class ModifyAsistenteInformation extends NewContext {
 
         title11.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title11.setForeground(new java.awt.Color(0, 0, 0));
-        title11.setText("Teléfono celular");
+        title11.setText(Messages.get("paciente.telefonoCelular"));
 
         javax.swing.GroupLayout jPanel43Layout = new javax.swing.GroupLayout(jPanel43);
         jPanel43.setLayout(jPanel43Layout);
@@ -1583,7 +1584,7 @@ public class ModifyAsistenteInformation extends NewContext {
         container11.add(jPanel70, java.awt.BorderLayout.LINE_START);
 
         textField10.setBackground(new java.awt.Color(255, 255, 255));
-        textField10.setText("Ingresar teléfono de casa");
+        textField10.setText("Enter home phone");
         textField10.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField10.setOpaque(false);
         textField10.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -1595,7 +1596,7 @@ public class ModifyAsistenteInformation extends NewContext {
 
         title12.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title12.setForeground(new java.awt.Color(0, 0, 0));
-        title12.setText("Teléfono de casa");
+        title12.setText(Messages.get("paciente.telefonoCasa"));
 
         javax.swing.GroupLayout jPanel64Layout = new javax.swing.GroupLayout(jPanel64);
         jPanel64.setLayout(jPanel64Layout);
@@ -1637,7 +1638,7 @@ public class ModifyAsistenteInformation extends NewContext {
 
         title13.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title13.setForeground(new java.awt.Color(0, 0, 0));
-        title13.setText("Departamento");
+        title13.setText(Messages.get("paciente.departamento"));
 
         comboDepartamento.setBackground(new java.awt.Color(255, 255, 255));
         comboDepartamento.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
@@ -1683,7 +1684,7 @@ public class ModifyAsistenteInformation extends NewContext {
 
         title14.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title14.setForeground(new java.awt.Color(0, 0, 0));
-        title14.setText("Municipio");
+        title14.setText(Messages.get("paciente.municipio"));
 
         container13.setkEndColor(new java.awt.Color(204, 204, 204));
         container13.setkFillBackground(false);
@@ -1730,7 +1731,7 @@ public class ModifyAsistenteInformation extends NewContext {
         container13.add(jPanel74, java.awt.BorderLayout.LINE_START);
 
         textField12.setBackground(new java.awt.Color(255, 255, 255));
-        textField12.setText("Ingresar municipio");
+        textField12.setText("Enter municipality");
         textField12.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField12.setOpaque(false);
         textField12.addActionListener(new java.awt.event.ActionListener() {
@@ -1827,7 +1828,7 @@ public class ModifyAsistenteInformation extends NewContext {
         container12.add(jPanel72, java.awt.BorderLayout.LINE_START);
 
         textField11.setBackground(new java.awt.Color(255, 255, 255));
-        textField11.setText("Ingresar dirección");
+        textField11.setText("Enter address");
         textField11.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField11.setOpaque(false);
         textField11.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -1839,7 +1840,7 @@ public class ModifyAsistenteInformation extends NewContext {
 
         title15.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title15.setForeground(new java.awt.Color(0, 0, 0));
-        title15.setText("Dirección");
+        title15.setText(Messages.get("pacientes.direccion"));
 
         javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
         jPanel25.setLayout(jPanel25Layout);
