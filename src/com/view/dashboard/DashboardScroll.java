@@ -9,6 +9,7 @@ import com.helper.PacienteHelper;
 import com.k33ptoo.components.KGradientPanel;
 import com.model.PacienteModel;
 import com.utils.Styles;
+import com.utils.Messages;
 import com.utils.Tools;
 import java.util.ArrayList;
 import javax.swing.border.MatteBorder;
@@ -1187,7 +1188,7 @@ public class DashboardScroll extends Styles {
 
         jLabel3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Panel de control, gestión clínica");
+        jLabel3.setText(Messages.get("dashboard.bienvenido") + ", " + Messages.get("welcome.gestion"));
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -2019,7 +2020,7 @@ public class DashboardScroll extends Styles {
 
         text4.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text4.setForeground(new java.awt.Color(153, 153, 153));
-        text4.setText("Organización");
+        text4.setText("Organization");
 
         contadorOrganizacion.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 28)); // NOI18N
         contadorOrganizacion.setForeground(new java.awt.Color(0, 0, 0));
@@ -2027,7 +2028,7 @@ public class DashboardScroll extends Styles {
 
         text8.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text8.setForeground(new java.awt.Color(153, 153, 153));
-        text8.setText("Asistentes totales de organización");
+        text8.setText("Total assistants in organization");
 
         javax.swing.GroupLayout jPanel65Layout = new javax.swing.GroupLayout(jPanel65);
         jPanel65.setLayout(jPanel65Layout);
@@ -2433,7 +2434,7 @@ public class DashboardScroll extends Styles {
 
         text13.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text13.setForeground(new java.awt.Color(153, 153, 153));
-        text13.setText("Género");
+        text13.setText(Messages.get("pacientes.genero"));
 
         javax.swing.GroupLayout jPanel82Layout = new javax.swing.GroupLayout(jPanel82);
         jPanel82.setLayout(jPanel82Layout);

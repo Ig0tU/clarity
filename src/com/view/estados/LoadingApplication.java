@@ -1,6 +1,7 @@
 package com.view.estados;
 
 import com.context.ChoosedPalette;
+import com.utils.Messages;
 import java.awt.Color;
 import javax.swing.border.LineBorder;
 
@@ -37,7 +38,7 @@ public class LoadingApplication extends javax.swing.JFrame {
         title = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Cargando aplicacion");
+        setTitle(Messages.get("app.cargando"));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setMaximumSize(new java.awt.Dimension(450, 300));
         setUndecorated(true);
@@ -56,7 +57,7 @@ public class LoadingApplication extends javax.swing.JFrame {
         title.setBackground(new java.awt.Color(0, 0, 0));
         title.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        title.setText("Iniciando aplicación...");
+        title.setText(Messages.get("app.inicializando"));
         loading.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 300));
 
         getContentPane().add(loading, java.awt.BorderLayout.CENTER);

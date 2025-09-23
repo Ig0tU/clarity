@@ -2,6 +2,7 @@ package com.view.estados;
 
 import com.context.ChoosedPalette;
 import com.context.StateColors;
+import com.utils.Messages;
 import com.utils.Tools;
 import javax.swing.border.LineBorder;
 
@@ -53,12 +54,12 @@ public class SuccessfullySaved extends javax.swing.JFrame {
         title.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title.setForeground(new java.awt.Color(51, 51, 51));
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        title.setText("¡¡Guardado correctamente!!");
+        title.setText(Messages.get("msg.guardadoExitoso"));
 
         message.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         message.setForeground(new java.awt.Color(102, 102, 102));
         message.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        message.setText("El paciente fue registrado exitosamente");
+        message.setText("Patient successfully registered");
 
         javax.swing.GroupLayout contentLayout = new javax.swing.GroupLayout(content);
         content.setLayout(contentLayout);

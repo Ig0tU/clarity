@@ -9,6 +9,7 @@ import com.helper.DoctorHelper;
 import com.k33ptoo.components.KGradientPanel;
 import com.model.AsistenteModel;
 import com.model.Registro;
+import com.utils.Messages;
 import com.utils.Styles;
 import com.utils.Tools;
 import java.awt.Font;
@@ -47,12 +48,12 @@ public class Login extends Styles {
     private void validateComplete(ArrayList<Registro> registros, String usuarioSesion) {
         paintOneContainer(container1, StateColors.getDanger());
         advertenciaCorreo.setForeground(StateColors.getDanger());
-        advertenciaCorreo.setText("Correo inv\u00e1lido");
+        advertenciaCorreo.setText(Messages.get("login.correoInvalido"));
         textField.setBorder(new MatteBorder(1, 0, 1, 0, StateColors.getDanger()));
         
         paintOneContainer(container2, StateColors.getDanger());
         advertenciaContrasena.setForeground(StateColors.getDanger());
-        advertenciaContrasena.setText("Contrase\u00f1a inv\u00e1lida");
+        advertenciaContrasena.setText(Messages.get("login.contrasenaIncorrecta"));
         passwordField.setBorder(new MatteBorder(1, 0, 1, 0, StateColors.getDanger()));
         
         String correoElectronico = textField.getText();
@@ -107,11 +108,11 @@ public class Login extends Styles {
         SwingUtilities.updateComponentTreeUI(this);
         
         if (!emailField.getText().contains("@")) {
-            warning.setText("Correo invalido");
+            warning.setText(Messages.get("login.correoInvalido"));
         } else if (emailField.getText().length() < 10) {
-            warning.setText("Minimo 10 caracteres");
+            warning.setText("Minimum 10 characters");
         } else if (emailField.getText().length() > 50) {
-            warning.setText("Maximo 50 caracteres");
+            warning.setText("Maximum 50 characters");
         } else {
             warning.setText("");
             paintOneContainer(container, ChoosedPalette.getWHITE_PALETTE().getGray());
@@ -125,7 +126,7 @@ public class Login extends Styles {
         passwordField.setBorder(new MatteBorder(1, 0, 1, 0, StateColors.getDanger()));
         
         if (actualCorreoDoctor != null) {
-            warning.setText("Contraseña incorrecta");
+            warning.setText(Messages.get("login.contrasenaIncorrecta"));
         } else {
             warning.setText("");
             paintOneContainer(container, ChoosedPalette.getGray());
@@ -342,7 +343,7 @@ public class Login extends Styles {
 
         title2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         title2.setForeground(new java.awt.Color(153, 153, 153));
-        title2.setText("Volver al menu principal");
+        title2.setText(Messages.get("assistant.volver"));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -409,7 +410,7 @@ public class Login extends Styles {
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
 
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 24)); // NOI18N
-        title1.setText("¡Bienvenido de vuelta!");
+        title1.setText("Welcome back!");
 
         textInfo2.setBackground(new java.awt.Color(255, 255, 255));
         textInfo2.setForeground(new java.awt.Color(102, 102, 102));
@@ -417,14 +418,14 @@ public class Login extends Styles {
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Acceso directo a tu panel de control, ingresa los datos");
+        text1.setText("Direct access to your control panel, enter the data");
         text1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         textInfo2.add(text1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 360, -1));
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setForeground(new java.awt.Color(153, 153, 153));
         text2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text2.setText("correspondientes para continuar");
+        text2.setText("corresponding to continue");
         text2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         textInfo2.add(text2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, 20));
 
@@ -434,7 +435,7 @@ public class Login extends Styles {
         emailIcon.setPreferredSize(new java.awt.Dimension(30, 30));
 
         title3.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
-        title3.setText("Correo Electronico");
+        title3.setText(Messages.get("login.correo"));
 
         passwordIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         passwordIcon.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -442,7 +443,7 @@ public class Login extends Styles {
         passwordIcon.setPreferredSize(new java.awt.Dimension(30, 30));
 
         title4.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
-        title4.setText("Contraseña");
+        title4.setText(Messages.get("login.contrasena"));
 
         container1.setBackground(new java.awt.Color(255, 255, 255));
         container1.setkEndColor(new java.awt.Color(0, 0, 0));
@@ -455,7 +456,7 @@ public class Login extends Styles {
         textField.setBackground(new java.awt.Color(255, 255, 255));
         textField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         textField.setForeground(new java.awt.Color(102, 102, 102));
-        textField.setText("ejemplo@email.com");
+        textField.setText("example@email.com");
         textField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         textField.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -539,7 +540,7 @@ public class Login extends Styles {
         ingresar.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
         ingresar.setForeground(new java.awt.Color(255, 255, 255));
         ingresar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ingresar.setText("Ingresar");
+        ingresar.setText(Messages.get("login.ingresar"));
         ingresar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         ingresar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -685,7 +686,7 @@ public class Login extends Styles {
     }//GEN-LAST:event_ingresarMouseClicked
 
     private void textFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textFieldMouseClicked
-        if (textField.getText().contains("ejemplo")) textField.setText("");
+        if (textField.getText().contains("example")) textField.setText("");
     }//GEN-LAST:event_textFieldMouseClicked
 
     private void passwordFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_passwordFieldMouseClicked

@@ -4,6 +4,7 @@ import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.helper.PacienteHelper;
 import com.utils.Styles;
+import com.utils.Messages;
 import com.utils.Tools;
 import javax.swing.JPanel;
 import javax.swing.border.MatteBorder;
@@ -740,7 +741,7 @@ public class Pacientes extends Styles {
 
         text4.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text4.setForeground(new java.awt.Color(153, 153, 153));
-        text4.setText("Género");
+        text4.setText(Messages.get("pacientes.genero"));
 
         javax.swing.GroupLayout jPanel39Layout = new javax.swing.GroupLayout(jPanel39);
         jPanel39.setLayout(jPanel39Layout);

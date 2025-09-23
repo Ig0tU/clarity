@@ -2,6 +2,7 @@ package com.view.welcomeView;
 
 import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
+import com.utils.Messages;
 import com.utils.Styles;
 
 /**
@@ -127,7 +128,7 @@ public class AsistenteSelection extends Styles {
 
         title3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         title3.setForeground(new java.awt.Color(153, 153, 153));
-        title3.setText("Volver al menu principal");
+        title3.setText(Messages.get("assistant.volver"));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -229,14 +230,14 @@ public class AsistenteSelection extends Styles {
 
         title2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 28)); // NOI18N
         title2.setForeground(new java.awt.Color(0, 0, 0));
-        title2.setText("Hola, vamos a empezar");
+        title2.setText(Messages.get("assistant.hola"));
 
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
         title1.setForeground(new java.awt.Color(51, 51, 51));
-        title1.setText("Asistentes");
+        title1.setText(Messages.get("assistant.asistentes"));
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        text1.setText("Selecciona una de las opciones a continuación para comenzar");
+        text1.setText(Messages.get("assistant.selecciona"));
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -313,7 +314,7 @@ public class AsistenteSelection extends Styles {
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
         text2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text2.setText("Ingresar");
+        text2.setText(Messages.get("assistant.ingresar"));
         text2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 text2MouseClicked(evt);
@@ -329,7 +330,7 @@ public class AsistenteSelection extends Styles {
         text3.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
         text3.setForeground(new java.awt.Color(255, 255, 255));
         text3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text3.setText("Registrarme");
+        text3.setText(Messages.get("assistant.registrarme"));
         text3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 text3MouseClicked(evt);

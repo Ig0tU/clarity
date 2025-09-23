@@ -3,6 +3,7 @@ package com.view.readPct;
 import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.utils.Styles;
+import com.utils.Messages;
 import com.utils.Tools;
 import java.util.ArrayList;
 import javax.swing.JPanel;
@@ -771,7 +772,7 @@ public class Paciente extends Styles {
         text4.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text4.setForeground(new java.awt.Color(153, 153, 153));
         text4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text4.setText("Ficha de odontología");
+        text4.setText(Messages.get("paciente.odontologia") + " Chart");
         text4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         text4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

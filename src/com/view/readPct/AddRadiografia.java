@@ -5,6 +5,7 @@ import com.context.ChoosedPalette;
 import com.helper.RadiografiaHelper;
 import com.model.RadiografiaModel;
 import com.model.RadiografiaType;
+import com.utils.Messages;
 import com.utils.Tools;
 import java.awt.Image;
 import java.io.File;
@@ -54,7 +55,7 @@ public class AddRadiografia extends javax.swing.JFrame {
         
         RadiografiaType tipo = RadiografiaType.ANTES;
         
-        if (combo.getSelectedItem().toString().equals("Despues")) {
+        if (combo.getSelectedItem().toString().equals("After")) {
             tipo = RadiografiaType.DESPUES;
         }
         
@@ -96,8 +97,8 @@ public class AddRadiografia extends javax.swing.JFrame {
     }
     
     private void addComboItems() {
-        combo.addItem("Antes");
-        combo.addItem("Despues");
+        combo.addItem("Before");
+        combo.addItem("After");
     }
     
     private void selectImage(JLabel label) {
@@ -151,13 +152,13 @@ public class AddRadiografia extends javax.swing.JFrame {
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Radiografias de ");
+        text1.setText(Messages.get("nav.radiografias") + " of ");
         jPanel2.add(text1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 220, -1));
 
         title1.setBackground(new java.awt.Color(0, 0, 0));
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Añadir radiografias");
+        title1.setText("Add " + Messages.get("nav.radiografias"));
         jPanel2.add(title1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 40, 253, -1));
 
         kGradientPanel3.setkBorderRadius(100);
@@ -200,7 +201,7 @@ public class AddRadiografia extends javax.swing.JFrame {
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text2.setText("Imagen");
+        text2.setText("Image");
         jPanel5.add(text2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 100, -1));
 
         combo.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
@@ -221,7 +222,7 @@ public class AddRadiografia extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Añadir radiografia");
+        jLabel2.setText("Add " + Messages.get("radiografias.nueva"));
         jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout container1Layout = new javax.swing.GroupLayout(container1);

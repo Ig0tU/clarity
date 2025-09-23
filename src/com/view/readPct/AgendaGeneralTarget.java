@@ -4,6 +4,7 @@ import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.context.StateColors;
 import com.model.ConsultaModel;
+import com.utils.Messages;
 import com.utils.Styles;
 import static com.utils.Styles.paintOneContainer;
 import javax.swing.SwingUtilities;
@@ -200,7 +201,7 @@ public class AgendaGeneralTarget extends Styles {
         tratamientoText.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         tratamientoText.setForeground(new java.awt.Color(0, 0, 0));
         tratamientoText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        tratamientoText.setText("Tratamiento");
+        tratamientoText.setText(Messages.get("paciente.tratamiento"));
         container2.add(tratamientoText, java.awt.BorderLayout.CENTER);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -232,7 +233,7 @@ public class AgendaGeneralTarget extends Styles {
         button.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         button.setForeground(new java.awt.Color(255, 255, 255));
         button.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        button.setText("Facturar");
+        button.setText("Invoice");
         button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout container3Layout = new javax.swing.GroupLayout(container3);

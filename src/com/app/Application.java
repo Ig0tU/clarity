@@ -2,9 +2,11 @@ package com.app;
 
 import com.connection.GenerateConnection;
 import com.context.ApplicationContext;
+import com.utils.Messages;
 import com.view.MainSite;
 import com.view.ingresar.Login;
 import java.sql.Connection;
+import java.util.Locale;
 
 /**
  * <h1>Main</h1>
@@ -24,6 +26,10 @@ public class Application {
      * @param args linea de comandos
      */
     public static void main(String[] args) {
+        // Set English as default locale for the entire application
+        Locale.setDefault(Locale.ENGLISH);
+        Messages.setLocale(Locale.ENGLISH);
+
         ApplicationContext.loading.setVisible(true);
         ApplicationContext.loading.fill(0, 45);
         Connection connection = GenerateConnection.getConnection();

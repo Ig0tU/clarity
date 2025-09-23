@@ -4,6 +4,7 @@ import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.context.StateColors;
 import com.model.ConsultaModel;
+import com.utils.Messages;
 import com.utils.Styles;
 
 /**
@@ -53,11 +54,11 @@ public class ConsultaTarget extends Styles {
     
     public void tipoTratamiento() {
         switch (tratamientoText.getText()) {
-            case "Odontolog\u00eda":
+            case "Dentistry":
                 paintOnePlainText(tratamientoText, ChoosedPalette.getMidColor());
                 paintOneContainer(tratamientoContainer, ChoosedPalette.getPrimaryLightColor());
                 break;
-            case "Ortodoncia":
+            case "Orthodontics":
                 paintOnePlainText(tratamientoText, StateColors.getSuccess());
                 paintOneContainer(tratamientoContainer, ChoosedPalette.getSecondaryLightColor());
                 break;
@@ -210,7 +211,7 @@ public class ConsultaTarget extends Styles {
         tratamientoText.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         tratamientoText.setForeground(new java.awt.Color(51, 51, 51));
         tratamientoText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        tratamientoText.setText("Tratamiento");
+        tratamientoText.setText(Messages.get("pacientes.tratamiento"));
 
         javax.swing.GroupLayout tratamientoContainerLayout = new javax.swing.GroupLayout(tratamientoContainer);
         tratamientoContainer.setLayout(tratamientoContainerLayout);
@@ -239,7 +240,7 @@ public class ConsultaTarget extends Styles {
         factura.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         factura.setForeground(new java.awt.Color(51, 51, 51));
         factura.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        factura.setText("Facturar");
+        factura.setText("Invoice");
         factura.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout facturarButtonLayout = new javax.swing.GroupLayout(facturarButton);
@@ -267,7 +268,7 @@ public class ConsultaTarget extends Styles {
         contactoText.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         contactoText.setForeground(new java.awt.Color(51, 51, 51));
         contactoText.setText("6450 0770");
-        contactoText.setToolTipText("Contacto");
+        contactoText.setToolTipText(Messages.get("pacientes.contacto"));
         jPanel6.add(contactoText, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 120, 30));
 
         container.add(jPanel6, java.awt.BorderLayout.CENTER);

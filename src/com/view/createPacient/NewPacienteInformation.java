@@ -3,6 +3,7 @@ package com.view.createPacient;
 import com.context.ChoosedPalette;
 import com.k33ptoo.components.KGradientPanel;
 import com.model.PacienteModel;
+import com.utils.Messages;
 import com.utils.Tools;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -430,12 +431,12 @@ public class NewPacienteInformation extends NewContext {
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Datos e información sobre el paciente");
+        text1.setText(Messages.get("paciente.datosPersonales"));
 
         title1.setBackground(new java.awt.Color(0, 0, 0));
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Datos e información");
+        title1.setText(Messages.get("paciente.informacionGeneral"));
 
         kGradientPanel3.setkBorderRadius(100);
         kGradientPanel3.setkEndColor(new java.awt.Color(69, 98, 255));
@@ -1153,7 +1154,7 @@ public class NewPacienteInformation extends NewContext {
 
         title7.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title7.setForeground(new java.awt.Color(0, 0, 0));
-        title7.setText("Género");
+        title7.setText(Messages.get("pacientes.genero"));
 
         generoCombo.setBackground(new java.awt.Color(255, 255, 255));
         generoCombo.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
@@ -1342,12 +1343,12 @@ public class NewPacienteInformation extends NewContext {
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setForeground(new java.awt.Color(153, 153, 153));
-        text2.setText("Dirección y contacto sobre el paciente");
+        text2.setText(Messages.get("paciente.informacionContacto"));
 
         title10.setBackground(new java.awt.Color(0, 0, 0));
         title10.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title10.setForeground(new java.awt.Color(0, 0, 0));
-        title10.setText("Dirección y contacto");
+        title10.setText(Messages.get("paciente.informacionContacto"));
 
         kGradientPanel4.setkBorderRadius(100);
         kGradientPanel4.setkEndColor(new java.awt.Color(69, 98, 255));
@@ -1455,7 +1456,7 @@ public class NewPacienteInformation extends NewContext {
 
         title11.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title11.setForeground(new java.awt.Color(0, 0, 0));
-        title11.setText("Teléfono celular");
+        title11.setText(Messages.get("paciente.telefonoCelular"));
 
         javax.swing.GroupLayout jPanel43Layout = new javax.swing.GroupLayout(jPanel43);
         jPanel43.setLayout(jPanel43Layout);

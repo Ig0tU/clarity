@@ -4,6 +4,7 @@ import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.helper.RadiografiaHelper;
 import com.utils.CustomScrollBar;
+import com.utils.Messages;
 import com.utils.Styles;
 import com.utils.Tools;
 import javax.swing.SwingUtilities;
@@ -274,11 +275,11 @@ public class OdontologiaDatos extends Styles {
         title1.setBackground(new java.awt.Color(0, 0, 0));
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Radiografías ");
+        title1.setText(Messages.get("nav.radiografias") + " ");
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Radiografías odontología del paciente");
+        text1.setText("Patient's dentistry X-rays");
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -321,7 +322,7 @@ public class OdontologiaDatos extends Styles {
 
         title3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         title3.setForeground(new java.awt.Color(0, 0, 0));
-        title3.setText("Agregar radiografía");
+        title3.setText("Add " + Messages.get("radiografias.nueva"));
         title3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         addIcon.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
@@ -386,7 +387,7 @@ public class OdontologiaDatos extends Styles {
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setForeground(new java.awt.Color(153, 153, 153));
-        text2.setText("Foto");
+        text2.setText("Photo");
 
         javax.swing.GroupLayout jPanel42Layout = new javax.swing.GroupLayout(jPanel42);
         jPanel42.setLayout(jPanel42Layout);
@@ -412,7 +413,7 @@ public class OdontologiaDatos extends Styles {
 
         text3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text3.setForeground(new java.awt.Color(153, 153, 153));
-        text3.setText("Nombre");
+        text3.setText(Messages.get("label.nombre"));
 
         javax.swing.GroupLayout jPanel43Layout = new javax.swing.GroupLayout(jPanel43);
         jPanel43.setLayout(jPanel43Layout);
@@ -439,7 +440,7 @@ public class OdontologiaDatos extends Styles {
         text4.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text4.setForeground(new java.awt.Color(153, 153, 153));
         text4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text4.setText("Tipo");
+        text4.setText(Messages.get("label.tipo"));
 
         javax.swing.GroupLayout jPanel39Layout = new javax.swing.GroupLayout(jPanel39);
         jPanel39.setLayout(jPanel39Layout);
@@ -465,7 +466,7 @@ public class OdontologiaDatos extends Styles {
 
         text5.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text5.setForeground(new java.awt.Color(153, 153, 153));
-        text5.setText("Acciones");
+        text5.setText("Actions");
 
         javax.swing.GroupLayout jPanel44Layout = new javax.swing.GroupLayout(jPanel44);
         jPanel44.setLayout(jPanel44Layout);
@@ -661,12 +662,12 @@ public class OdontologiaDatos extends Styles {
 
         text6.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text6.setForeground(new java.awt.Color(153, 153, 153));
-        text6.setText("Odontograma del paciente");
+        text6.setText("Patient's odontogram");
 
         title2.setBackground(new java.awt.Color(0, 0, 0));
         title2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title2.setForeground(new java.awt.Color(0, 0, 0));
-        title2.setText("Odontograma");
+        title2.setText(Messages.get("nav.odontograma"));
 
         javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
         jPanel23.setLayout(jPanel23Layout);
@@ -709,7 +710,7 @@ public class OdontologiaDatos extends Styles {
 
         title4.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         title4.setForeground(new java.awt.Color(0, 0, 0));
-        title4.setText("Ver odontograma");
+        title4.setText("View " + Messages.get("nav.odontograma"));
         title4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         addIcon1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N

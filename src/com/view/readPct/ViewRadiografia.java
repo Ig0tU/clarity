@@ -3,6 +3,7 @@ package com.view.readPct;
 
 import com.context.ChoosedPalette;
 import com.model.RadiografiaModel;
+import com.utils.Messages;
 import com.utils.Tools;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -167,7 +168,7 @@ public class ViewRadiografia extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 8)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText(" Clinica - Sistema de gestión");
+        jLabel1.setText(" Clinic - Management System");
         jLabel1.setPreferredSize(new java.awt.Dimension(180, 16));
         windowControls.add(jLabel1, java.awt.BorderLayout.LINE_START);
 

@@ -4,6 +4,7 @@ import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.helper.ConsultasHelper;
 import com.model.ConsultaModel;
+import com.utils.Messages;
 import com.utils.Styles;
 import com.utils.Tools;
 import com.view.createPacient.NewContext;
@@ -51,9 +52,9 @@ public class NuevaConsulta extends Styles {
     }
     
     private void addItems() {
-        tratamientoCombo.addItem("Elegir tratamiento");
-        tratamientoCombo.addItem("Odontolog\u00eda");
-        tratamientoCombo.addItem("Ortodoncia");
+        tratamientoCombo.addItem("Choose treatment");
+        tratamientoCombo.addItem("Dentistry");
+        tratamientoCombo.addItem("Orthodontics");
     }
     
     @Override
@@ -350,7 +351,7 @@ public class NuevaConsulta extends Styles {
         jLabel3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Guardar");
+        jLabel3.setText(Messages.get("form.guardar"));
         jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout saveButtonLayout = new javax.swing.GroupLayout(saveButton);
@@ -383,7 +384,7 @@ public class NuevaConsulta extends Styles {
         cancel.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         cancel.setForeground(new java.awt.Color(255, 255, 255));
         cancel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        cancel.setText("Cancelar");
+        cancel.setText(Messages.get("form.cancelar"));
         cancel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout cancelButtonLayout = new javax.swing.GroupLayout(cancelButton);
@@ -454,12 +455,12 @@ public class NuevaConsulta extends Styles {
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Agrega una nueva consulta para este paciente");
+        text1.setText("Add a new consultation for this patient");
 
         title1.setBackground(new java.awt.Color(0, 0, 0));
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Nueva consulta");
+        title1.setText(Messages.get("consultas.nueva"));
 
         kGradientPanel3.setkBorderRadius(100);
         kGradientPanel3.setkEndColor(new java.awt.Color(69, 98, 255));
@@ -554,7 +555,7 @@ public class NuevaConsulta extends Styles {
         container1.add(jPanel45, java.awt.BorderLayout.LINE_START);
 
         textField1.setBackground(new java.awt.Color(255, 255, 255));
-        textField1.setText("Ingresar dia de la consulta");
+        textField1.setText("Enter consultation day");
         textField1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField1.setOpaque(false);
         textField1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -571,7 +572,7 @@ public class NuevaConsulta extends Styles {
 
         title2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title2.setForeground(new java.awt.Color(0, 0, 0));
-        title2.setText("Dia");
+        title2.setText("Day");
 
         advertenciaDia.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         advertenciaDia.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
@@ -651,7 +652,7 @@ public class NuevaConsulta extends Styles {
         container2.add(jPanel47, java.awt.BorderLayout.LINE_START);
 
         textField2.setBackground(new java.awt.Color(255, 255, 255));
-        textField2.setText("Ingresar mes de la consulta");
+        textField2.setText("Enter consultation month");
         textField2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField2.setOpaque(false);
         textField2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -668,7 +669,7 @@ public class NuevaConsulta extends Styles {
 
         title3.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title3.setForeground(new java.awt.Color(0, 0, 0));
-        title3.setText("Mes");
+        title3.setText("Month");
 
         advertenciaMes.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         advertenciaMes.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
@@ -748,7 +749,7 @@ public class NuevaConsulta extends Styles {
         container3.add(jPanel49, java.awt.BorderLayout.LINE_START);
 
         textField3.setBackground(new java.awt.Color(255, 255, 255));
-        textField3.setText("Ingresar año de la consulta");
+        textField3.setText("Enter consultation year");
         textField3.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField3.setOpaque(false);
         textField3.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -760,7 +761,7 @@ public class NuevaConsulta extends Styles {
 
         title4.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title4.setForeground(new java.awt.Color(0, 0, 0));
-        title4.setText("Año");
+        title4.setText("Year");
 
         advertenciaAnnio.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         advertenciaAnnio.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
@@ -843,7 +844,7 @@ public class NuevaConsulta extends Styles {
         container5.add(jPanel52, java.awt.BorderLayout.LINE_START);
 
         textField4.setBackground(new java.awt.Color(255, 255, 255));
-        textField4.setText("Ingresar hora de la consulta");
+        textField4.setText("Enter consultation time");
         textField4.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField4.setOpaque(false);
         textField4.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -855,7 +856,7 @@ public class NuevaConsulta extends Styles {
 
         title5.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title5.setForeground(new java.awt.Color(0, 0, 0));
-        title5.setText("Hora");
+        title5.setText(Messages.get("consultas.hora"));
 
         advertenciaHora.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         advertenciaHora.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
@@ -918,7 +919,7 @@ public class NuevaConsulta extends Styles {
 
         title6.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title6.setForeground(new java.awt.Color(0, 0, 0));
-        title6.setText("Tratamientos");
+        title6.setText(Messages.get("consultas.tratamiento"));
 
         advertenciaCombo.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         advertenciaCombo.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);

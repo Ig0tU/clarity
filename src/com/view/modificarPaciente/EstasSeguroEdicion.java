@@ -3,6 +3,7 @@ package com.view.modificarPaciente;
 import com.view.createPacient.*;
 import com.context.ChoosedPalette;
 import com.helper.PacienteHelper;
+import com.utils.Messages;
 import com.utils.Tools;
 
 /**
@@ -55,7 +56,7 @@ public class EstasSeguroEdicion extends javax.swing.JFrame {
         guardar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("¿Estas seguro de que quieres eliminar?");
+        setTitle("Are you sure you want to save?");
         setMinimumSize(new java.awt.Dimension(450, 350));
         setUndecorated(true);
         setResizable(false);
@@ -72,17 +73,17 @@ public class EstasSeguroEdicion extends javax.swing.JFrame {
 
         title.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        title.setText("Algunos datos estan vacíos");
+        title.setText("Some data is empty");
         content.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 450, -1));
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text1.setText("¿Estas seguro de que quieres guardar este paciente?");
+        text1.setText("Are you sure you want to save this patient?");
         content.add(text1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 450, -1));
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text2.setText("Hay datos que no han sido especificados todavía");
+        text2.setText("There is data that has not been specified yet");
         content.add(text2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 220, 450, -1));
 
         icon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -96,7 +97,7 @@ public class EstasSeguroEdicion extends javax.swing.JFrame {
 
         cancelar.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         cancelar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        cancelar.setText("Cancelar");
+        cancelar.setText(Messages.get("form.cancelar"));
         cancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cancelar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -115,7 +116,7 @@ public class EstasSeguroEdicion extends javax.swing.JFrame {
 
         guardar.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         guardar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        guardar.setText("Guardar");
+        guardar.setText(Messages.get("form.guardar"));
         guardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         guardar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
