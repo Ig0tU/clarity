@@ -34,7 +34,7 @@ public class AppointmentTarget extends Styles {
         tratamientoText.setText(consulta.getTratamientoDeConsulta());
         
         if (consulta.isConsultaRealizada()) {
-            facturaText.setText("View Invoice");
+            facturaText.setText(Messages.get("factura.ver"));
         }
     }
     
@@ -374,7 +374,7 @@ public class AppointmentTarget extends Styles {
         facturaText.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         facturaText.setForeground(new java.awt.Color(0, 0, 0));
         facturaText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        facturaText.setText("Invoice");
+        facturaText.setText(Messages.get("factura.invoice"));
         facturaText.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         facturaContainer.add(facturaText, java.awt.BorderLayout.CENTER);
 

@@ -299,11 +299,11 @@ public class ControlMensual extends Styles {
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setForeground(new java.awt.Color(102, 102, 102));
-        text2.setText("Monthly Control");
+        text2.setText(Messages.get("control.mensual"));
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(102, 102, 102));
-        text1.setText("Orthodontics Record  /");
+        text1.setText(Messages.get("control.record") + "  /");
         text1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         text1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -454,7 +454,7 @@ public class ControlMensual extends Styles {
 
         jLabel1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Back");
+        jLabel1.setText(Messages.get("control.back"));
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         back.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -681,7 +681,7 @@ public class ControlMensual extends Styles {
         text5.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text5.setForeground(new java.awt.Color(153, 153, 153));
         text5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text5.setText("Actions");
+        text5.setText(Messages.get("control.actions"));
         text5.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
 
         javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
@@ -802,7 +802,7 @@ public class ControlMensual extends Styles {
 
         addText.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         addText.setForeground(new java.awt.Color(69, 98, 255));
-        addText.setText("New Monthly Control");
+        addText.setText(Messages.get("control.nuevo"));
         addText.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         addIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

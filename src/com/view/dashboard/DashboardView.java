@@ -3,6 +3,7 @@ package com.view.dashboard;
 import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.utils.CustomScrollBar;
+import com.utils.Messages;
 import com.utils.Styles;
 import com.utils.Tools;
 import java.awt.BorderLayout;
@@ -323,11 +324,11 @@ public class DashboardView extends Styles {
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(102, 102, 102));
-        text1.setText("Consultas pendientes registradas");
+        text1.setText(Messages.get("dashboard.consultasPendientesDesc"));
 
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Consultas pendientes");
+        title1.setText(Messages.get("dashboard.consultasPendientes"));
 
         jPanel90.setBackground(new java.awt.Color(69, 98, 255));
 
@@ -566,7 +567,7 @@ public class DashboardView extends Styles {
 
         text12.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text12.setForeground(new java.awt.Color(153, 153, 153));
-        text12.setText("Usuario");
+        text12.setText(Messages.get("dashboard.usuario"));
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
@@ -592,7 +593,7 @@ public class DashboardView extends Styles {
         text13.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text13.setForeground(new java.awt.Color(153, 153, 153));
         text13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text13.setText("Actividad");
+        text13.setText(Messages.get("dashboard.actividad"));
 
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
         jPanel22.setLayout(jPanel22Layout);
@@ -618,7 +619,7 @@ public class DashboardView extends Styles {
         text14.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text14.setForeground(new java.awt.Color(153, 153, 153));
         text14.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        text14.setText("Fecha");
+        text14.setText(Messages.get("date.fecha"));
 
         javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
         jPanel23.setLayout(jPanel23Layout);
@@ -645,7 +646,7 @@ public class DashboardView extends Styles {
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setForeground(new java.awt.Color(102, 102, 102));
-        text2.setText("Actividad realizada recientemente");
+        text2.setText(Messages.get("dashboard.actividadRealizadaDesc"));
 
         jPanel91.setBackground(new java.awt.Color(69, 98, 255));
 
@@ -662,7 +663,7 @@ public class DashboardView extends Styles {
 
         title2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title2.setForeground(new java.awt.Color(0, 0, 0));
-        title2.setText("Actividad reciente");
+        title2.setText(Messages.get("dashboard.actividadReciente"));
 
         javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
         jPanel24.setLayout(jPanel24Layout);

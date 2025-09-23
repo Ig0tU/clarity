@@ -169,40 +169,40 @@ public class Agendas extends Styles {
         
         switch (monthValue) {
             case JANUARY:
-                mesText = "Enero";
+                mesText = Messages.get("month.january");
                 break;
             case FEBRUARY:
-                mesText = "Febrero";
+                mesText = Messages.get("month.february");
                 break;
             case MARCH:
-                mesText = "Marzo";
+                mesText = Messages.get("month.march");
                 break;
             case APRIL:
-                mesText = "Abril";
+                mesText = Messages.get("month.april");
                 break;
             case MAY:
-                mesText = "Mayo";
+                mesText = Messages.get("month.may");
                 break;
             case JUNE:
-                mesText = "Junio";
+                mesText = Messages.get("month.june");
                 break;
             case JULY:
-                mesText = "Julio";
+                mesText = Messages.get("month.july");
                 break;
             case AUGUST:
-                mesText = "Agosto";
+                mesText = Messages.get("month.august");
                 break;
             case SEPTEMBER:
-                mesText = "Septiembre";
+                mesText = Messages.get("month.september");
                 break;
             case OCTOBER:
-                mesText = "Octubre";
+                mesText = Messages.get("month.october");
                 break;
             case NOVEMBER:
-                mesText = "Noviembre";
+                mesText = Messages.get("month.november");
                 break;
             case DECEMBER:
-                mesText = "Diciembre";
+                mesText = Messages.get("month.december");
                 break;
         }
         
@@ -214,40 +214,40 @@ public class Agendas extends Styles {
         int value = 0;
         
         switch (month) {
-            case "Enero":
+            case "January":
                 value = Month.JANUARY.getValue();
                 break;
-            case "Febrero":
+            case "February":
                 value = Month.FEBRUARY.getValue();
                 break;
-            case "Marzo":
+            case "March":
                 value = Month.MARCH.getValue();
                 break;
-            case "Abril":
+            case "April":
                 value = Month.APRIL.getValue();
                 break;
-            case "Mayo":
+            case "May":
                 value = Month.MAY.getValue();
                 break;
-            case "Junio":
+            case "June":
                 value = Month.JUNE.getValue();
                 break;
-            case "Julio":
+            case "July":
                 value = Month.JULY.getValue();
                 break;
-            case "Agosto":
+            case "August":
                 value = Month.AUGUST.getValue();
                 break;
-            case "Septiembre":
+            case "September":
                 value = Month.SEPTEMBER.getValue();
                 break;
-            case "Octubre":
+            case "October":
                 value = Month.OCTOBER.getValue();
                 break;
-            case "Noviembre":
+            case "November":
                 value = Month.NOVEMBER.getValue();
                 break;
-            case "Diciembre":
+            case "December":
                 value = Month.DECEMBER.getValue();
                 break;
         }
@@ -1099,7 +1099,7 @@ public class Agendas extends Styles {
         fecha.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         fecha.setForeground(new java.awt.Color(0, 0, 0));
         fecha.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        fecha.setText("Septiembre 2022");
+        fecha.setText(Messages.get("month.september") + " 2022");
 
         javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
         jPanel26.setLayout(jPanel26Layout);

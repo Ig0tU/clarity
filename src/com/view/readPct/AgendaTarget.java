@@ -32,7 +32,7 @@ public class AgendaTarget extends Styles {
         
         if (consulta.isConsultaRealizada()) {
             paintOneContainer(facturaContainer, ChoosedPalette.getSecondaryLightColor());
-            factura.setText("View Invoice");
+            factura.setText(Messages.get("factura.ver"));
         }
     }
     
@@ -51,7 +51,7 @@ public class AgendaTarget extends Styles {
     public void initStyles() {
         editIcon.setSize(34, 58);
         Tools.setImageLabel(editIcon, "src/com/assets/editar.png", 10, 32, ChoosedPalette.getMidColor());
-        factura.setText("Invoice");
+        factura.setText(Messages.get("factura.invoice"));
         facturaContainer.setkStartColor(ChoosedPalette.getMidColor());
         facturaContainer.setkEndColor(ChoosedPalette.getMidColor());
         paintOneContainer(facturaContainer, ChoosedPalette.getMidColor());
@@ -284,7 +284,7 @@ public class AgendaTarget extends Styles {
         factura.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         factura.setForeground(new java.awt.Color(255, 255, 255));
         factura.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        factura.setText("Invoice");
+        factura.setText(Messages.get("factura.invoice"));
         factura.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         facturaContainer.add(factura, java.awt.BorderLayout.CENTER);
 

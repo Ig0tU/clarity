@@ -111,7 +111,7 @@ public class Exit extends javax.swing.JFrame {
 
         cancelar.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         cancelar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        cancelar.setText("Cancelar");
+        cancelar.setText(Messages.get("form.cancelar"));
         cancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cancelar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

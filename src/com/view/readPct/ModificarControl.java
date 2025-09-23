@@ -4,6 +4,7 @@ import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.helper.ControlMensualHelper;
 import com.model.ControlMensualModel;
+import com.utils.Messages;
 import com.utils.Styles;
 import com.utils.Tools;
 
@@ -240,7 +241,7 @@ public class ModificarControl extends Styles {
         jLabel3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Guardar");
+        jLabel3.setText(Messages.get("form.guardar"));
         jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout saveButtonLayout = new javax.swing.GroupLayout(saveButton);
@@ -273,7 +274,7 @@ public class ModificarControl extends Styles {
         cancel.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         cancel.setForeground(new java.awt.Color(255, 255, 255));
         cancel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        cancel.setText("Cancelar");
+        cancel.setText(Messages.get("form.cancelar"));
         cancel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout cancelButtonLayout = new javax.swing.GroupLayout(cancelButton);

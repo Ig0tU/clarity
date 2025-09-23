@@ -233,7 +233,7 @@ public class AgendaGeneralTarget extends Styles {
         button.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         button.setForeground(new java.awt.Color(255, 255, 255));
         button.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        button.setText("Invoice");
+        button.setText(Messages.get("factura.invoice"));
         button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout container3Layout = new javax.swing.GroupLayout(container3);
