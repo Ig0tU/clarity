@@ -5,6 +5,7 @@ import com.context.ChoosedPalette;
 import com.helper.OdontogramaHelper;
 import com.model.DienteOdontogramaModel;
 import com.utils.CustomScrollBar;
+import com.utils.Messages;
 import com.utils.Styles;
 import com.utils.Tools;
 import static com.view.createPacient.NewContext.emptyMessage;
@@ -34,7 +35,7 @@ public class OdontogramaData extends Styles {
             case CORONA_MAL_ESTADO:
             case DIENTE_AUSENTE:
             case DIENTE_INDICADO_EXTRACCION:
-                comboCara.setSelectedItem("Completo");
+                comboCara.setSelectedItem("Complete");
                 break;
             default:
                 comboCara.setSelectedItem(OdontogramaContext.getDienteOdontogramaModel().getCara());
@@ -120,7 +121,7 @@ public class OdontogramaData extends Styles {
             if (i == 19 || i == 29 || i == 39) {
                 i++;
             } else {
-                comboPieza.addItem("Pieza " + i);
+                comboPieza.addItem(Messages.get("odontograma.pieza") + " " + i);
             }
         }
         
@@ -128,7 +129,7 @@ public class OdontogramaData extends Styles {
             if (i == 56 || i == 66 || i == 76) {
                 i += 4;
             } else {
-                comboPieza.addItem("Pieza " + i);
+                comboPieza.addItem(Messages.get("odontograma.pieza") + " " + i);
             }
         }
         
@@ -137,7 +138,7 @@ public class OdontogramaData extends Styles {
         comboCara.addItem("Distal");
         comboCara.addItem("Mesial");
         comboCara.addItem("Oclusal");
-        comboCara.addItem("Completo");
+        comboCara.addItem("Complete");
     }
     
     private String setSide(String switchedSide, String side, String side1, String side2, String side3, String side4, String side5) {
@@ -159,7 +160,7 @@ public class OdontogramaData extends Styles {
             case "Oclusal":
                 finalSide = side4;
                 break;
-            case "Completo":
+            case "Complete":
                 finalSide = side5;
                 break;
             default:
@@ -211,11 +212,11 @@ public class OdontogramaData extends Styles {
             case CORONA_MAL_ESTADO:
             case DIENTE_AUSENTE:
             case DIENTE_INDICADO_EXTRACCION:
-                OdontogramaContext.getDienteOdontogramaModel().setCara("Completo");
+                OdontogramaContext.getDienteOdontogramaModel().setCara("Complete");
                 break;
         }
         
-        if (!OdontogramaContext.getDienteOdontogramaModel().getCara().equals("Completo")) {
+        if (!OdontogramaContext.getDienteOdontogramaModel().getCara().equals("Complete")) {
             dienteOdontograma.setCara(comboCara.getSelectedItem().toString());
         } else {
             dienteOdontograma.setCara(OdontogramaContext.getDienteOdontogramaModel().getCara());
@@ -268,7 +269,7 @@ public class OdontogramaData extends Styles {
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         title.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
-        title.setText("Descripcion - diagnostico");
+        title.setText(Messages.get("odontograma.descripcion") + " - " + Messages.get("odontograma.diagnostico"));
         jPanel4.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
 
         container2.setkEndColor(new java.awt.Color(204, 204, 204));
@@ -284,7 +285,7 @@ public class OdontogramaData extends Styles {
         observaciones.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         observaciones.setLineWrap(true);
         observaciones.setRows(5);
-        observaciones.setText("Ingresar descripción del diagnostico...");
+        observaciones.setText("Enter diagnosis description...");
         observaciones.setToolTipText("");
         observaciones.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 0));
         scroll.setViewportView(observaciones);
@@ -315,7 +316,7 @@ public class OdontogramaData extends Styles {
 
         textField2.setBackground(new java.awt.Color(255, 255, 255));
         textField2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        textField2.setText("Ingresar procedimiento");
+        textField2.setText("Enter " + Messages.get("odontograma.procedimiento").toLowerCase());
         textField2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         textField2.setOpaque(false);
 
@@ -336,7 +337,7 @@ public class OdontogramaData extends Styles {
         jPanel4.add(container3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 420, 40));
 
         title2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
-        title2.setText("Diagnostico");
+        title2.setText(Messages.get("odontograma.diagnostico"));
         jPanel4.add(title2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, -1));
 
         container1.setkEndColor(new java.awt.Color(204, 204, 204));
@@ -346,7 +347,7 @@ public class OdontogramaData extends Styles {
 
         textField1.setBackground(new java.awt.Color(255, 255, 255));
         textField1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        textField1.setText("Ingresar diagnostico");
+        textField1.setText("Enter " + Messages.get("odontograma.diagnostico").toLowerCase());
         textField1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         textField1.setOpaque(false);
 
@@ -367,7 +368,7 @@ public class OdontogramaData extends Styles {
         jPanel4.add(container1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 420, 40));
 
         title3.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
-        title3.setText("Procedimiento");
+        title3.setText(Messages.get("odontograma.procedimiento"));
         jPanel4.add(title3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
 
         comboPieza.setBackground(new java.awt.Color(255, 255, 255));
@@ -375,11 +376,11 @@ public class OdontogramaData extends Styles {
         jPanel4.add(comboPieza, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, 420, 40));
 
         title4.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
-        title4.setText("Pieza");
+        title4.setText(Messages.get("odontograma.pieza"));
         jPanel4.add(title4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, -1, -1));
 
         title5.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
-        title5.setText("Cara");
+        title5.setText(Messages.get("odontograma.cara"));
         jPanel4.add(title5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, -1, -1));
 
         comboCara.setBackground(new java.awt.Color(255, 255, 255));
@@ -417,7 +418,7 @@ public class OdontogramaData extends Styles {
         jLabel1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Guardar");
+        jLabel1.setText(Messages.get("form.guardar"));
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout container6Layout = new javax.swing.GroupLayout(container6);
@@ -481,7 +482,7 @@ public class OdontogramaData extends Styles {
 
         cancelText.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         cancelText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        cancelText.setText("Cancelar");
+        cancelText.setText(Messages.get("form.cancelar"));
         cancelText.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout container7Layout = new javax.swing.GroupLayout(container7);
@@ -575,8 +576,8 @@ public class OdontogramaData extends Styles {
             
             for (DienteOdontogramaModel diente : ApplicationContext.dienteOdontogramaModels) {
                 boolean firstStatement = diente.getNumeroPieza() == devolverDatos().getNumeroPieza() && diente.getCara().equals(devolverDatos().getCara());
-                boolean secondStatement = diente.getNumeroPieza() == devolverDatos().getNumeroPieza() && devolverDatos().getCara().equals("Completo");
-                boolean thirdStatement = diente.getNumeroPieza() == devolverDatos().getNumeroPieza() && diente.getCara().equals("Completo") && !devolverDatos().getCara().equals("Completo");
+                boolean secondStatement = diente.getNumeroPieza() == devolverDatos().getNumeroPieza() && devolverDatos().getCara().equals("Complete");
+                boolean thirdStatement = diente.getNumeroPieza() == devolverDatos().getNumeroPieza() && diente.getCara().equals("Complete") && !devolverDatos().getCara().equals("Complete");
                 
                 if (firstStatement || secondStatement || thirdStatement) {
                     OdontogramaHelper.deleteRegistro(diente.getId());

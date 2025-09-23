@@ -2,6 +2,7 @@ package com.view.createPacient;
 
 import com.context.ChoosedPalette;
 import com.model.FichaOdontologicaModel;
+import com.utils.Messages;
 import com.utils.Tools;
 import java.time.LocalDateTime;
 
@@ -253,12 +254,12 @@ public class NewPacienteOdontologia extends NewContext {
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Datos de diagnostico sobre el paciente");
+        text1.setText(Messages.get("paciente.informacionMedica"));
 
         title1.setBackground(new java.awt.Color(0, 0, 0));
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Datos de diagnóstico");
+        title1.setText(Messages.get("medical.diagnostico"));
 
         kGradientPanel3.setkBorderRadius(100);
         kGradientPanel3.setkEndColor(new java.awt.Color(69, 98, 255));
@@ -359,7 +360,7 @@ public class NewPacienteOdontologia extends NewContext {
         container1.add(jPanel29, java.awt.BorderLayout.LINE_START);
 
         textField1.setBackground(new java.awt.Color(255, 255, 255));
-        textField1.setText("Ingresar HO");
+        textField1.setText("Enter HO");
         textField1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField1.setOpaque(false);
         container1.add(textField1, java.awt.BorderLayout.CENTER);
@@ -440,7 +441,7 @@ public class NewPacienteOdontologia extends NewContext {
         container2.add(jPanel32, java.awt.BorderLayout.LINE_START);
 
         textField2.setBackground(new java.awt.Color(255, 255, 255));
-        textField2.setText("Ingresar HM");
+        textField2.setText("Enter HM");
         textField2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField2.setOpaque(false);
         container2.add(textField2, java.awt.BorderLayout.CENTER);
@@ -476,7 +477,7 @@ public class NewPacienteOdontologia extends NewContext {
 
         title6.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title6.setForeground(new java.awt.Color(0, 0, 0));
-        title6.setText("Tipo de anestesico");
+        title6.setText("Anesthetic Type");
 
         container3.setkEndColor(new java.awt.Color(204, 204, 204));
         container3.setkFillBackground(false);
@@ -523,7 +524,7 @@ public class NewPacienteOdontologia extends NewContext {
         container3.add(jPanel34, java.awt.BorderLayout.LINE_START);
 
         textField3.setBackground(new java.awt.Color(255, 255, 255));
-        textField3.setText("Ingresar tipo de anestesico");
+        textField3.setText("Enter anesthetic type");
         textField3.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField3.setOpaque(false);
         container3.add(textField3, java.awt.BorderLayout.CENTER);
@@ -559,7 +560,7 @@ public class NewPacienteOdontologia extends NewContext {
 
         title7.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title7.setForeground(new java.awt.Color(0, 0, 0));
-        title7.setText("Medicamentos");
+        title7.setText(Messages.get("medical.medicamentos"));
 
         container4.setkEndColor(new java.awt.Color(204, 204, 204));
         container4.setkFillBackground(false);
@@ -606,7 +607,7 @@ public class NewPacienteOdontologia extends NewContext {
         container4.add(jPanel36, java.awt.BorderLayout.LINE_START);
 
         textField4.setBackground(new java.awt.Color(255, 255, 255));
-        textField4.setText("Ingresar medicamentos");
+        textField4.setText("Enter medications");
         textField4.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField4.setOpaque(false);
         container4.add(textField4, java.awt.BorderLayout.CENTER);
@@ -729,12 +730,12 @@ public class NewPacienteOdontologia extends NewContext {
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setForeground(new java.awt.Color(153, 153, 153));
-        text2.setText("Datos de diagnostico sobre el paciente");
+        text2.setText(Messages.get("paciente.informacionMedica"));
 
         title2.setBackground(new java.awt.Color(0, 0, 0));
         title2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title2.setForeground(new java.awt.Color(0, 0, 0));
-        title2.setText("Diagnóstico odontológico");
+        title2.setText(Messages.get("paciente.odontologia"));
 
         kGradientPanel5.setkBorderRadius(100);
         kGradientPanel5.setkEndColor(new java.awt.Color(69, 98, 255));
@@ -782,7 +783,7 @@ public class NewPacienteOdontologia extends NewContext {
 
         title8.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title8.setForeground(new java.awt.Color(0, 0, 0));
-        title8.setText("Anotaciones");
+        title8.setText(Messages.get("medical.observaciones"));
 
         container5.setkEndColor(new java.awt.Color(204, 204, 204));
         container5.setkFillBackground(false);
@@ -829,7 +830,7 @@ public class NewPacienteOdontologia extends NewContext {
         container5.add(jPanel38, java.awt.BorderLayout.LINE_START);
 
         textField5.setBackground(new java.awt.Color(255, 255, 255));
-        textField5.setText("Ingresar anotaciones");
+        textField5.setText("Enter observations");
         textField5.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField5.setOpaque(false);
         container5.add(textField5, java.awt.BorderLayout.CENTER);
@@ -866,7 +867,7 @@ public class NewPacienteOdontologia extends NewContext {
 
         title9.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title9.setForeground(new java.awt.Color(0, 0, 0));
-        title9.setText("Protesis");
+        title9.setText(Messages.get("dental.protesis"));
 
         container6.setkEndColor(new java.awt.Color(204, 204, 204));
         container6.setkFillBackground(false);
@@ -913,7 +914,7 @@ public class NewPacienteOdontologia extends NewContext {
         container6.add(jPanel40, java.awt.BorderLayout.LINE_START);
 
         textField6.setBackground(new java.awt.Color(255, 255, 255));
-        textField6.setText("Ingresar protesis");
+        textField6.setText("Enter prosthetics");
         textField6.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField6.setOpaque(false);
         container6.add(textField6, java.awt.BorderLayout.CENTER);
@@ -947,7 +948,7 @@ public class NewPacienteOdontologia extends NewContext {
 
         title10.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title10.setForeground(new java.awt.Color(0, 0, 0));
-        title10.setText("Anotaciones de protesis");
+        title10.setText("Prosthetics Notes");
 
         container7.setkEndColor(new java.awt.Color(204, 204, 204));
         container7.setkFillBackground(false);
@@ -994,7 +995,7 @@ public class NewPacienteOdontologia extends NewContext {
         container7.add(jPanel42, java.awt.BorderLayout.LINE_START);
 
         textField7.setBackground(new java.awt.Color(255, 255, 255));
-        textField7.setText("Ingresar anotaciones de protesis");
+        textField7.setText("Enter prosthetics notes");
         textField7.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField7.setOpaque(false);
         container7.add(textField7, java.awt.BorderLayout.CENTER);

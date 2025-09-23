@@ -4,6 +4,7 @@ import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.model.FichaOrtodonciaModel;
 import com.utils.CustomScrollBar;
+import com.utils.Messages;
 import com.utils.Styles;
 import com.utils.Tools;
 import javax.swing.border.MatteBorder;
@@ -46,8 +47,8 @@ public class DatosOrtodoncia extends Styles {
         extracciones.setText(fichaOrtodoncia.isExtracciones() ? "SI" : "NO");
         observaciones.setText(fichaOrtodoncia.getObservaciones());
 
-        text3.setText("Editada por ultima vez el " + fichaOrtodoncia.getDiaModificacion() + "/" + fichaOrtodoncia.getMesModificacion() + "/" + fichaOrtodoncia.getAnnioModificacion());
-        text4.setText("Agregada el " + fichaOrtodoncia.getDiaCreacion() + "/" + fichaOrtodoncia.getMesCreacion() + "/" + fichaOrtodoncia.getAnnioCreacion());
+        text3.setText("Last edited on " + fichaOrtodoncia.getDiaModificacion() + "/" + fichaOrtodoncia.getMesModificacion() + "/" + fichaOrtodoncia.getAnnioModificacion());
+        text4.setText("Added on " + fichaOrtodoncia.getDiaCreacion() + "/" + fichaOrtodoncia.getMesCreacion() + "/" + fichaOrtodoncia.getAnnioCreacion());
     }
 
     @Override
@@ -307,12 +308,12 @@ public class DatosOrtodoncia extends Styles {
 
         text4.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         text4.setForeground(new java.awt.Color(153, 153, 153));
-        text4.setText("Agregada el 15/09/2022");
+        text4.setText("Added on 15/09/2022");
         text4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         text3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         text3.setForeground(new java.awt.Color(153, 153, 153));
-        text3.setText("Editada por ultima vez el 15/09/2022");
+        text3.setText("Last edited on 15/09/2022");
         text3.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout needBorderLayout = new javax.swing.GroupLayout(needBorder);
@@ -355,11 +356,11 @@ public class DatosOrtodoncia extends Styles {
 
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Datos de diagnostico ");
+        title1.setText(Messages.get("medical.diagnostico") + " Data");
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Datos de diagnostico sobre el paciente");
+        text1.setText("Diagnostic data about the patient");
         text1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         jPanel11.setBackground(new java.awt.Color(255, 255, 255));
@@ -441,11 +442,11 @@ public class DatosOrtodoncia extends Styles {
         title5.setBackground(new java.awt.Color(255, 255, 255));
         title5.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title5.setForeground(new java.awt.Color(0, 0, 0));
-        title5.setText("Perfil Total");
+        title5.setText("Total Profile");
 
         perfilTotal.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         perfilTotal.setForeground(new java.awt.Color(153, 153, 153));
-        perfilTotal.setText("Perfil total");
+        perfilTotal.setText("Total profile");
         perfilTotal.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
@@ -474,13 +475,13 @@ public class DatosOrtodoncia extends Styles {
 
         perfilTercioInf.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         perfilTercioInf.setForeground(new java.awt.Color(153, 153, 153));
-        perfilTercioInf.setText("Perfil tercio inf");
+        perfilTercioInf.setText("Lower third profile");
         perfilTercioInf.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         title10.setBackground(new java.awt.Color(255, 255, 255));
         title10.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title10.setForeground(new java.awt.Color(0, 0, 0));
-        title10.setText("Perfil tercio inf");
+        title10.setText("Lower Third Profile");
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
@@ -508,11 +509,11 @@ public class DatosOrtodoncia extends Styles {
 
         title2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title2.setForeground(new java.awt.Color(0, 0, 0));
-        title2.setText("Diagnostico ortodontico");
+        title2.setText("Orthodontic " + Messages.get("medical.diagnostico"));
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setForeground(new java.awt.Color(153, 153, 153));
-        text2.setText("Datos de diagnostico sobre el paciente");
+        text2.setText("Diagnostic data about the patient");
         text2.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         jPanel16.setOpaque(false);
@@ -751,13 +752,13 @@ public class DatosOrtodoncia extends Styles {
 
         anguloNasolabial.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         anguloNasolabial.setForeground(new java.awt.Color(153, 153, 153));
-        anguloNasolabial.setText("Angulo nasolabial");
+        anguloNasolabial.setText("Nasolabial angle");
         anguloNasolabial.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         title11.setBackground(new java.awt.Color(255, 255, 255));
         title11.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title11.setForeground(new java.awt.Color(0, 0, 0));
-        title11.setText("Angulo nasolabial");
+        title11.setText("Nasolabial Angle");
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
@@ -786,13 +787,13 @@ public class DatosOrtodoncia extends Styles {
 
         anguloCuello.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         anguloCuello.setForeground(new java.awt.Color(153, 153, 153));
-        anguloCuello.setText("Angulo cuello - mentón");
+        anguloCuello.setText("Neck-chin angle");
         anguloCuello.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         title12.setBackground(new java.awt.Color(255, 255, 255));
         title12.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title12.setForeground(new java.awt.Color(0, 0, 0));
-        title12.setText("Angulo cuello - mentón");
+        title12.setText("Neck-Chin Angle");
 
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
         jPanel22.setLayout(jPanel22Layout);
@@ -825,13 +826,13 @@ public class DatosOrtodoncia extends Styles {
 
         encias.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         encias.setForeground(new java.awt.Color(153, 153, 153));
-        encias.setText("Encías del paciente");
+        encias.setText("Patient's gums");
         encias.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         title13.setBackground(new java.awt.Color(255, 255, 255));
         title13.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title13.setForeground(new java.awt.Color(0, 0, 0));
-        title13.setText("Encías");
+        title13.setText("Gums");
 
         javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
         jPanel24.setLayout(jPanel24Layout);
@@ -860,13 +861,13 @@ public class DatosOrtodoncia extends Styles {
 
         frenillos.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         frenillos.setForeground(new java.awt.Color(153, 153, 153));
-        frenillos.setText("Frenillos del paciente");
+        frenillos.setText("Patient's frenulums");
         frenillos.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         title14.setBackground(new java.awt.Color(255, 255, 255));
         title14.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title14.setForeground(new java.awt.Color(0, 0, 0));
-        title14.setText("Frenillos");
+        title14.setText("Frenulums");
 
         javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
         jPanel25.setLayout(jPanel25Layout);
@@ -898,11 +899,11 @@ public class DatosOrtodoncia extends Styles {
         title19.setBackground(new java.awt.Color(255, 255, 255));
         title19.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title19.setForeground(new java.awt.Color(0, 0, 0));
-        title19.setText("Lineas medias");
+        title19.setText("Midlines");
 
         lineasMedias.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         lineasMedias.setForeground(new java.awt.Color(153, 153, 153));
-        lineasMedias.setText("Lineas medias");
+        lineasMedias.setText("Midlines");
         lineasMedias.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
@@ -931,11 +932,11 @@ public class DatosOrtodoncia extends Styles {
         title20.setBackground(new java.awt.Color(255, 255, 255));
         title20.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title20.setForeground(new java.awt.Color(0, 0, 0));
-        title20.setText("Tipo dentición");
+        title20.setText("Dentition Type");
 
         tipoDenticion.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         tipoDenticion.setForeground(new java.awt.Color(153, 153, 153));
-        tipoDenticion.setText("Tipo dentición");
+        tipoDenticion.setText("Dentition type");
         tipoDenticion.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel31Layout = new javax.swing.GroupLayout(jPanel31);
@@ -964,11 +965,11 @@ public class DatosOrtodoncia extends Styles {
         title21.setBackground(new java.awt.Color(255, 255, 255));
         title21.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title21.setForeground(new java.awt.Color(0, 0, 0));
-        title21.setText("Extracciones");
+        title21.setText(Messages.get("dental.extraccion") + "s");
 
         extracciones.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         extracciones.setForeground(new java.awt.Color(153, 153, 153));
-        extracciones.setText("Extracciones");
+        extracciones.setText("Extractions");
         extracciones.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel32Layout = new javax.swing.GroupLayout(jPanel32);
@@ -995,11 +996,11 @@ public class DatosOrtodoncia extends Styles {
         title24.setBackground(new java.awt.Color(255, 255, 255));
         title24.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title24.setForeground(new java.awt.Color(0, 0, 0));
-        title24.setText("Observaciones");
+        title24.setText(Messages.get("medical.observaciones"));
 
         observaciones.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         observaciones.setForeground(new java.awt.Color(153, 153, 153));
-        observaciones.setText("Observaciones de la ficha de ortodoncia");
+        observaciones.setText("Orthodontic record observations");
         observaciones.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout contentLayout = new javax.swing.GroupLayout(content);

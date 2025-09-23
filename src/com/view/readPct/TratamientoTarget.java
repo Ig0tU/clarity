@@ -2,6 +2,7 @@ package com.view.readPct;
 
 import com.context.ChoosedPalette;
 import com.context.StateColors;
+import com.utils.Messages;
 import com.utils.Styles;
 
 /**
@@ -21,19 +22,19 @@ public class TratamientoTarget extends Styles {
         
         switch (tratamiento) {
             case "odontologia":
-                tratamientoText.setText("Odontolog\u00eda");
+                tratamientoText.setText(Messages.get("paciente.odontologia"));
                 break;
             case "ortodoncia":
-                tratamientoText.setText("Ortodoncia");
+                tratamientoText.setText(Messages.get("paciente.ortodoncia"));
                 break;
             default:
-                System.out.println("Invalido");
+                System.out.println("Invalid");
         }
     }
     
     @Override
     public void colorBasics() {
-        if (tratamientoText.getText().equals("Odontolog\u00eda")) {
+        if (tratamientoText.getText().equals(Messages.get("paciente.odontologia"))) {
             paintOneContainer(content, ChoosedPalette.getPrimaryLightColor());
         } else {
             paintOneContainer(content, ChoosedPalette.getSecondaryLightColor());
@@ -47,7 +48,7 @@ public class TratamientoTarget extends Styles {
     
     @Override
     public void light () {
-        if (tratamientoText.getText().equals("Odontolog\u00eda")) {
+        if (tratamientoText.getText().equals(Messages.get("paciente.odontologia"))) {
             tratamientoText.setForeground(ChoosedPalette.getMidColor());
         } else {
             tratamientoText.setForeground(StateColors.getSuccess());
@@ -102,7 +103,7 @@ public class TratamientoTarget extends Styles {
         tratamientoText.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         tratamientoText.setForeground(new java.awt.Color(0, 0, 0));
         tratamientoText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        tratamientoText.setText("Odontología");
+        tratamientoText.setText(Messages.get("paciente.odontologia"));
 
         javax.swing.GroupLayout contentLayout = new javax.swing.GroupLayout(content);
         content.setLayout(contentLayout);

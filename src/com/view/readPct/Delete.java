@@ -4,6 +4,7 @@ import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.context.StateColors;
 import com.helper.RadiografiaHelper;
+import com.utils.Messages;
 import javax.swing.border.LineBorder;
 
 /**
@@ -86,7 +87,7 @@ public class Delete extends javax.swing.JFrame {
         guardar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("¿Estas seguro de que quieres eliminar?");
+        setTitle(Messages.get("msg.confirmarEliminar"));
         setMinimumSize(new java.awt.Dimension(450, 350));
         setUndecorated(true);
         setResizable(false);
@@ -96,17 +97,17 @@ public class Delete extends javax.swing.JFrame {
 
         title.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        title.setText("Eliminar radiografía");
+        title.setText(Messages.get("radiografias.eliminar"));
         content.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 450, -1));
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text1.setText("¿Estás seguro de que quieres eliminar esta radiografía?");
+        text1.setText("Are you sure you want to delete this X-ray?");
         content.add(text1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 450, -1));
 
         nombreRadiografia.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         nombreRadiografia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        nombreRadiografia.setText("Se cerrará la sesión actual para iniciar de nuevo.");
+        nombreRadiografia.setText("The current session will be closed to start again.");
         content.add(nombreRadiografia, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 450, -1));
 
         container1.setkEndColor(new java.awt.Color(204, 204, 204));
@@ -117,7 +118,7 @@ public class Delete extends javax.swing.JFrame {
 
         cancelar.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         cancelar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        cancelar.setText("Cancelar");
+        cancelar.setText(Messages.get("form.cancelar"));
         cancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cancelar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -136,7 +137,7 @@ public class Delete extends javax.swing.JFrame {
 
         guardar.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         guardar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        guardar.setText("Eliminar");
+        guardar.setText(Messages.get("form.eliminar"));
         guardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         guardar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

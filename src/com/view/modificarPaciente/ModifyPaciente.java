@@ -5,6 +5,7 @@ import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.helper.PacienteHelper;
 import com.utils.CustomScrollBar;
+import com.utils.Messages;
 import com.utils.Styles;
 import com.utils.Tools;
 import java.util.ArrayList;
@@ -247,7 +248,7 @@ public class ModifyPaciente extends Styles {
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setForeground(new java.awt.Color(69, 98, 255));
         text2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text2.setText("Datos generales");
+        text2.setText(Messages.get("paciente.datosPersonales"));
         text2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout datosContainerLayout = new javax.swing.GroupLayout(datosContainer);
@@ -280,7 +281,7 @@ public class ModifyPaciente extends Styles {
         text3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text3.setForeground(new java.awt.Color(69, 98, 255));
         text3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text3.setText("Ficha de odontología");
+        text3.setText(Messages.get("paciente.odontologia"));
         text3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout odontologiaContainerLayout = new javax.swing.GroupLayout(odontologiaContainer);
@@ -313,7 +314,7 @@ public class ModifyPaciente extends Styles {
         text4.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text4.setForeground(new java.awt.Color(69, 98, 255));
         text4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text4.setText("Ficha de ortodoncia");
+        text4.setText(Messages.get("paciente.ortodoncia"));
         text4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout ortodonciaContainerLayout = new javax.swing.GroupLayout(ortodonciaContainer);
@@ -358,12 +359,12 @@ public class ModifyPaciente extends Styles {
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Editar la información correspondiente del paciente");
+        text1.setText("Edit the corresponding patient information");
 
         title1.setBackground(new java.awt.Color(0, 0, 0));
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Editar paciente");
+        title1.setText(Messages.get("pacientes.modificar"));
 
         containerButton.setkEndColor(new java.awt.Color(0, 0, 0));
         containerButton.setkFillBackground(false);
@@ -378,7 +379,7 @@ public class ModifyPaciente extends Styles {
         cancel.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         cancel.setForeground(new java.awt.Color(0, 0, 0));
         cancel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        cancel.setText("Cancelar");
+        cancel.setText(Messages.get("form.cancelar"));
         cancel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout containerButtonLayout = new javax.swing.GroupLayout(containerButton);
@@ -542,7 +543,7 @@ public class ModifyPaciente extends Styles {
         jLabel3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Guardar");
+        jLabel3.setText(Messages.get("form.guardar"));
         jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout saveButtonLayout = new javax.swing.GroupLayout(saveButton);

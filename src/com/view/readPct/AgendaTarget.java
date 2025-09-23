@@ -4,6 +4,7 @@ import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.context.StateColors;
 import com.model.ConsultaModel;
+import com.utils.Messages;
 import com.utils.Styles;
 import com.utils.Tools;
 import javax.swing.SwingUtilities;
@@ -31,7 +32,7 @@ public class AgendaTarget extends Styles {
         
         if (consulta.isConsultaRealizada()) {
             paintOneContainer(facturaContainer, ChoosedPalette.getSecondaryLightColor());
-            factura.setText("Ver factura");
+            factura.setText("View Invoice");
         }
     }
     
@@ -50,7 +51,7 @@ public class AgendaTarget extends Styles {
     public void initStyles() {
         editIcon.setSize(34, 58);
         Tools.setImageLabel(editIcon, "src/com/assets/editar.png", 10, 32, ChoosedPalette.getMidColor());
-        factura.setText("Facturar");
+        factura.setText("Invoice");
         facturaContainer.setkStartColor(ChoosedPalette.getMidColor());
         facturaContainer.setkEndColor(ChoosedPalette.getMidColor());
         paintOneContainer(facturaContainer, ChoosedPalette.getMidColor());
@@ -216,7 +217,7 @@ public class AgendaTarget extends Styles {
         tratamientoText.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         tratamientoText.setForeground(new java.awt.Color(0, 0, 0));
         tratamientoText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        tratamientoText.setText("Tratamiento");
+        tratamientoText.setText(Messages.get("paciente.tratamiento"));
         container2.add(tratamientoText, java.awt.BorderLayout.CENTER);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -283,7 +284,7 @@ public class AgendaTarget extends Styles {
         factura.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         factura.setForeground(new java.awt.Color(255, 255, 255));
         factura.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        factura.setText("Facturar");
+        factura.setText("Invoice");
         factura.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         facturaContainer.add(factura, java.awt.BorderLayout.CENTER);
 

@@ -5,6 +5,7 @@ import com.context.ChoosedPalette;
 import com.context.StateColors;
 import com.helper.OdontogramaHelper;
 import com.model.DienteOdontogramaModel;
+import com.utils.Messages;
 import javax.swing.border.LineBorder;
 
 /**
@@ -68,7 +69,7 @@ public class DeleteTarget extends javax.swing.JFrame {
 
     public void setModel(DienteOdontogramaModel diente) {
         this.diente = diente;
-        descripcion.setText("Pieza N° " + diente.getNumeroPieza() + ", cara: " + diente.getCara());
+        descripcion.setText(Messages.get("odontograma.pieza") + " N° " + diente.getNumeroPieza() + ", " + Messages.get("odontograma.cara") + ": " + diente.getCara());
     }
             
     @SuppressWarnings("unchecked")
@@ -85,7 +86,7 @@ public class DeleteTarget extends javax.swing.JFrame {
         guardar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("¿Estas seguro de que quieres eliminar?");
+        setTitle(Messages.get("msg.confirmarEliminar"));
         setMinimumSize(new java.awt.Dimension(450, 350));
         setUndecorated(true);
         setResizable(false);
@@ -95,12 +96,12 @@ public class DeleteTarget extends javax.swing.JFrame {
 
         title.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        title.setText("Eliminar marca");
+        title.setText("Delete Mark");
         content.add(title, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 450, -1));
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text1.setText("¿Estás seguro de que quieres eliminar esta marca?");
+        text1.setText("Are you sure you want to delete this mark?");
         content.add(text1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 450, -1));
 
         descripcion.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
@@ -115,7 +116,7 @@ public class DeleteTarget extends javax.swing.JFrame {
 
         cancelar.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         cancelar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        cancelar.setText("Cancelar");
+        cancelar.setText(Messages.get("form.cancelar"));
         cancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cancelar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -134,7 +135,7 @@ public class DeleteTarget extends javax.swing.JFrame {
 
         guardar.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         guardar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        guardar.setText("Eliminar");
+        guardar.setText(Messages.get("form.eliminar"));
         guardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         guardar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

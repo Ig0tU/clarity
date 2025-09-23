@@ -4,6 +4,7 @@ import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.helper.FacturaHelper;
 import com.model.FacturaModel;
+import com.utils.Messages;
 import com.model.MontosModel;
 import com.utils.Tools;
 import java.util.ArrayList;
@@ -50,12 +51,12 @@ public class FacturaData extends FacturaContext {
     }
     
     public void setStaticValues() {
-        textField3.setText("Ingresar saldo");
-        textField2.setText("Ingresar total");
+        textField3.setText("Enter balance");
+        textField2.setText("Enter total");
         
         for (int i = 0; i < 4; i++) {
             VALORES_MONTO.get(i).setText("$0.00");
-            ANOTACIONES_MONTO.get(i).setText("Ingresar anotaciones");
+            ANOTACIONES_MONTO.get(i).setText("Enter notes");
         }
     }
     
@@ -236,7 +237,7 @@ public class FacturaData extends FacturaContext {
 
         textField2.setBackground(new java.awt.Color(255, 255, 255));
         textField2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        textField2.setText("Ingresar total");
+        textField2.setText("Enter total");
         textField2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         textField2.setOpaque(false);
         textField2.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -262,7 +263,7 @@ public class FacturaData extends FacturaContext {
         jPanel4.add(container3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 470, 420, 40));
 
         title2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
-        title2.setText("Montos");
+        title2.setText("Amounts");
         jPanel4.add(title2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
 
         container1.setkEndColor(new java.awt.Color(204, 204, 204));
@@ -272,7 +273,7 @@ public class FacturaData extends FacturaContext {
 
         textField1.setBackground(new java.awt.Color(255, 255, 255));
         textField1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        textField1.setText("Ingresar anotaciones");
+        textField1.setText("Enter notes");
         textField1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         textField1.setOpaque(false);
         textField1.addActionListener(new java.awt.event.ActionListener() {
@@ -311,7 +312,7 @@ public class FacturaData extends FacturaContext {
         jPanel4.add(cross, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 10, 30, 30));
 
         title4.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
-        title4.setText("Saldo");
+        title4.setText("Balance");
         jPanel4.add(title4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
 
         container2.setkEndColor(new java.awt.Color(204, 204, 204));
@@ -321,7 +322,7 @@ public class FacturaData extends FacturaContext {
 
         textField3.setBackground(new java.awt.Color(255, 255, 255));
         textField3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        textField3.setText("Ingresar saldo");
+        textField3.setText("Enter balance");
         textField3.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         textField3.setOpaque(false);
         textField3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -442,7 +443,7 @@ public class FacturaData extends FacturaContext {
 
         textField6.setBackground(new java.awt.Color(255, 255, 255));
         textField6.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        textField6.setText("Ingresar anotaciones");
+        textField6.setText("Enter notes");
         textField6.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         textField6.setOpaque(false);
         textField6.addActionListener(new java.awt.event.ActionListener() {
@@ -516,7 +517,7 @@ public class FacturaData extends FacturaContext {
 
         textField8.setBackground(new java.awt.Color(255, 255, 255));
         textField8.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        textField8.setText("Ingresar anotaciones");
+        textField8.setText("Enter notes");
         textField8.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         textField8.setOpaque(false);
         textField8.addActionListener(new java.awt.event.ActionListener() {
@@ -590,7 +591,7 @@ public class FacturaData extends FacturaContext {
 
         textField10.setBackground(new java.awt.Color(255, 255, 255));
         textField10.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        textField10.setText("Ingresar anotaciones");
+        textField10.setText("Enter notes");
         textField10.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(0, 0, 0)));
         textField10.setOpaque(false);
         textField10.addActionListener(new java.awt.event.ActionListener() {
@@ -616,11 +617,11 @@ public class FacturaData extends FacturaContext {
         jPanel4.add(container12, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 380, 320, 40));
 
         nombre.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
-        nombre.setText("Nombre del paciente");
+        nombre.setText("Patient Name");
         jPanel4.add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 420, 30));
 
         text.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        text.setText("Consulta");
+        text.setText("Consultation");
         jPanel4.add(text, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, -1));
 
         jPanel2.add(jPanel4, java.awt.BorderLayout.CENTER);
@@ -643,7 +644,7 @@ public class FacturaData extends FacturaContext {
         jLabel1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Guardar");
+        jLabel1.setText(Messages.get("form.guardar"));
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout container6Layout = new javax.swing.GroupLayout(container6);
@@ -707,7 +708,7 @@ public class FacturaData extends FacturaContext {
 
         cancelText.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         cancelText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        cancelText.setText("Cancelar");
+        cancelText.setText(Messages.get("form.cancelar"));
         cancelText.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout container7Layout = new javax.swing.GroupLayout(container7);

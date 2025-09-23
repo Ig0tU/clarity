@@ -3,6 +3,7 @@ package com.view.readPct;
 import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.helper.RadiografiaHelper;
+import com.utils.Messages;
 import com.utils.Styles;
 import com.utils.Tools;
 import javax.swing.SwingUtilities;
@@ -24,7 +25,7 @@ public class Radiografias extends Styles {
     }
     
     public void setValues(String value) {
-        title1.setText("Radiograf\u00edas de " + value);
+        title1.setText(Messages.get("nav.radiografias") + " of " + value);
         state = value;
     }
     
@@ -289,11 +290,11 @@ public class Radiografias extends Styles {
         title1.setBackground(new java.awt.Color(0, 0, 0));
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Radiografias de");
+        title1.setText(Messages.get("nav.radiografias") + " of");
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Radiografias del paciente");
+        text1.setText("Patient's X-rays");
 
         jPanel30.setOpaque(false);
         jPanel30.setLayout(new java.awt.GridLayout(1, 0));
@@ -301,10 +302,10 @@ public class Radiografias extends Styles {
         jPanel31.setOpaque(false);
 
         title2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
-        title2.setText("Anterior");
+        title2.setText("Before");
 
         text10.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        text10.setText("Radiografias antes del tratamiento");
+        text10.setText("X-rays before treatment");
         text10.setToolTipText("");
 
         javax.swing.GroupLayout jPanel31Layout = new javax.swing.GroupLayout(jPanel31);
@@ -333,10 +334,10 @@ public class Radiografias extends Styles {
         jPanel32.setOpaque(false);
 
         title3.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
-        title3.setText("Después");
+        title3.setText("After");
 
         text11.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        text11.setText("Radiografias después del tratamiento");
+        text11.setText("X-rays after treatment");
 
         javax.swing.GroupLayout jPanel32Layout = new javax.swing.GroupLayout(jPanel32);
         jPanel32.setLayout(jPanel32Layout);
@@ -375,7 +376,7 @@ public class Radiografias extends Styles {
 
         jLabel4.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Añadir radiografia");
+        jLabel4.setText("Add " + Messages.get("radiografias.nueva"));
         jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout addButtonLayout = new javax.swing.GroupLayout(addButton);
@@ -412,7 +413,7 @@ public class Radiografias extends Styles {
         cancel.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         cancel.setForeground(new java.awt.Color(255, 255, 255));
         cancel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        cancel.setText("Cancelar");
+        cancel.setText(Messages.get("form.cancelar"));
         cancel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout cancelButtonLayout = new javax.swing.GroupLayout(cancelButton);
@@ -554,7 +555,7 @@ public class Radiografias extends Styles {
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setForeground(new java.awt.Color(153, 153, 153));
-        text2.setText("Foto");
+        text2.setText("Photo");
 
         javax.swing.GroupLayout jPanel42Layout = new javax.swing.GroupLayout(jPanel42);
         jPanel42.setLayout(jPanel42Layout);
@@ -580,7 +581,7 @@ public class Radiografias extends Styles {
 
         text3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text3.setForeground(new java.awt.Color(153, 153, 153));
-        text3.setText("Nombre");
+        text3.setText(Messages.get("label.nombre"));
 
         javax.swing.GroupLayout jPanel43Layout = new javax.swing.GroupLayout(jPanel43);
         jPanel43.setLayout(jPanel43Layout);
@@ -607,7 +608,7 @@ public class Radiografias extends Styles {
         text4.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text4.setForeground(new java.awt.Color(153, 153, 153));
         text4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text4.setText("Se añadio");
+        text4.setText("Added");
 
         javax.swing.GroupLayout jPanel39Layout = new javax.swing.GroupLayout(jPanel39);
         jPanel39.setLayout(jPanel39Layout);
@@ -633,7 +634,7 @@ public class Radiografias extends Styles {
 
         text5.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text5.setForeground(new java.awt.Color(153, 153, 153));
-        text5.setText("Acciones");
+        text5.setText("Actions");
 
         javax.swing.GroupLayout jPanel44Layout = new javax.swing.GroupLayout(jPanel44);
         jPanel44.setLayout(jPanel44Layout);
@@ -841,7 +842,7 @@ public class Radiografias extends Styles {
 
         text6.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text6.setForeground(new java.awt.Color(153, 153, 153));
-        text6.setText("Foto");
+        text6.setText("Photo");
 
         javax.swing.GroupLayout jPanel45Layout = new javax.swing.GroupLayout(jPanel45);
         jPanel45.setLayout(jPanel45Layout);
@@ -867,7 +868,7 @@ public class Radiografias extends Styles {
 
         text7.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text7.setForeground(new java.awt.Color(153, 153, 153));
-        text7.setText("Nombre");
+        text7.setText(Messages.get("label.nombre"));
 
         javax.swing.GroupLayout jPanel46Layout = new javax.swing.GroupLayout(jPanel46);
         jPanel46.setLayout(jPanel46Layout);
@@ -894,7 +895,7 @@ public class Radiografias extends Styles {
         text8.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text8.setForeground(new java.awt.Color(153, 153, 153));
         text8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text8.setText("Se añadio");
+        text8.setText("Added");
 
         javax.swing.GroupLayout jPanel40Layout = new javax.swing.GroupLayout(jPanel40);
         jPanel40.setLayout(jPanel40Layout);
@@ -920,7 +921,7 @@ public class Radiografias extends Styles {
 
         text9.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text9.setForeground(new java.awt.Color(153, 153, 153));
-        text9.setText("Acciones");
+        text9.setText("Actions");
 
         javax.swing.GroupLayout jPanel47Layout = new javax.swing.GroupLayout(jPanel47);
         jPanel47.setLayout(jPanel47Layout);

@@ -3,6 +3,7 @@ package com.view.readPct;
 import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.utils.CustomScrollBar;
+import com.utils.Messages;
 import com.utils.Styles;
 import com.utils.Tools;
 import javax.swing.border.MatteBorder;
@@ -36,7 +37,7 @@ public class Generales extends Styles {
         tcelular.setText(ApplicationContext.selectedPacient.getTelefonoCelular());
         tcasa.setText(ApplicationContext.selectedPacient.getTelefonoCasa());
         direccion.setText(ApplicationContext.selectedPacient.getDireccion());
-        text3.setText("Este paciente fue registrado el " + ApplicationContext.selectedPacient.getDiaCreacion() + "/" + ApplicationContext.selectedPacient.getMesCreacion() + "/" + ApplicationContext.selectedPacient.getAnnioCreacion() + " a las " + ApplicationContext.selectedPacient.getHoraCreacion());
+        text3.setText("This patient was registered on " + ApplicationContext.selectedPacient.getDiaCreacion() + "/" + ApplicationContext.selectedPacient.getMesCreacion() + "/" + ApplicationContext.selectedPacient.getAnnioCreacion() + " at " + ApplicationContext.selectedPacient.getHoraCreacion());
     }
     
     @Override
@@ -305,11 +306,11 @@ public class Generales extends Styles {
 
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Datos personales");
+        title1.setText(Messages.get("paciente.datosPersonales"));
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Datos e información general sobre el paciente");
+        text1.setText("General data and information about the patient");
         text1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         jPanel21.setBackground(new java.awt.Color(255, 255, 255));
@@ -322,11 +323,11 @@ public class Generales extends Styles {
         title6.setBackground(new java.awt.Color(255, 255, 255));
         title6.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title6.setForeground(new java.awt.Color(0, 0, 0));
-        title6.setText("Género");
+        title6.setText(Messages.get("pacientes.genero"));
 
         genero.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         genero.setForeground(new java.awt.Color(153, 153, 153));
-        genero.setText("Género");
+        genero.setText(Messages.get("pacientes.genero"));
         genero.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
@@ -357,11 +358,11 @@ public class Generales extends Styles {
         title7.setBackground(new java.awt.Color(255, 255, 255));
         title7.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title7.setForeground(new java.awt.Color(0, 0, 0));
-        title7.setText("Responsables");
+        title7.setText(Messages.get("paciente.responsable"));
 
         responsables.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         responsables.setForeground(new java.awt.Color(153, 153, 153));
-        responsables.setText("Responsables");
+        responsables.setText(Messages.get("paciente.responsable"));
         responsables.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
@@ -391,11 +392,11 @@ public class Generales extends Styles {
         title8.setBackground(new java.awt.Color(255, 255, 255));
         title8.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title8.setForeground(new java.awt.Color(0, 0, 0));
-        title8.setText("Parentesco");
+        title8.setText(Messages.get("paciente.parentesco"));
 
         parentesco.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         parentesco.setForeground(new java.awt.Color(153, 153, 153));
-        parentesco.setText("Parentesco");
+        parentesco.setText(Messages.get("paciente.parentesco"));
         parentesco.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
@@ -440,11 +441,11 @@ public class Generales extends Styles {
 
         title9.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title9.setForeground(new java.awt.Color(0, 0, 0));
-        title9.setText("Dirección y contacto");
+        title9.setText(Messages.get("paciente.informacionContacto"));
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setForeground(new java.awt.Color(153, 153, 153));
-        text2.setText("Dirección y contacto sobre el paciente");
+        text2.setText("Address and contact information about the patient");
         text2.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         jPanel11.setBackground(new java.awt.Color(255, 255, 255));
@@ -457,11 +458,11 @@ public class Generales extends Styles {
         title10.setBackground(new java.awt.Color(255, 255, 255));
         title10.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title10.setForeground(new java.awt.Color(0, 0, 0));
-        title10.setText("Departamento");
+        title10.setText(Messages.get("paciente.departamento"));
 
         departamento.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         departamento.setForeground(new java.awt.Color(153, 153, 153));
-        departamento.setText("Departamento");
+        departamento.setText(Messages.get("paciente.departamento"));
         departamento.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
@@ -491,11 +492,11 @@ public class Generales extends Styles {
         title11.setBackground(new java.awt.Color(255, 255, 255));
         title11.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title11.setForeground(new java.awt.Color(0, 0, 0));
-        title11.setText("Municipio");
+        title11.setText(Messages.get("paciente.municipio"));
 
         municipio.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         municipio.setForeground(new java.awt.Color(153, 153, 153));
-        municipio.setText("Municipio");
+        municipio.setText(Messages.get("paciente.municipio"));
         municipio.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
@@ -525,11 +526,11 @@ public class Generales extends Styles {
         title12.setBackground(new java.awt.Color(255, 255, 255));
         title12.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title12.setForeground(new java.awt.Color(0, 0, 0));
-        title12.setText("T. Celular");
+        title12.setText(Messages.get("paciente.telefonoCelular"));
 
         tcelular.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         tcelular.setForeground(new java.awt.Color(153, 153, 153));
-        tcelular.setText("T. Celular");
+        tcelular.setText(Messages.get("paciente.telefonoCelular"));
         tcelular.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
@@ -559,11 +560,11 @@ public class Generales extends Styles {
         title13.setBackground(new java.awt.Color(255, 255, 255));
         title13.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title13.setForeground(new java.awt.Color(0, 0, 0));
-        title13.setText("T. Casa");
+        title13.setText(Messages.get("paciente.telefonoCasa"));
 
         tcasa.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         tcasa.setForeground(new java.awt.Color(153, 153, 153));
-        tcasa.setText("T. Casa");
+        tcasa.setText(Messages.get("paciente.telefonoCasa"));
         tcasa.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
@@ -590,11 +591,11 @@ public class Generales extends Styles {
         title14.setBackground(new java.awt.Color(255, 255, 255));
         title14.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title14.setForeground(new java.awt.Color(0, 0, 0));
-        title14.setText("Dirección");
+        title14.setText(Messages.get("pacientes.direccion"));
 
         direccion.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         direccion.setForeground(new java.awt.Color(153, 153, 153));
-        direccion.setText("Dirección");
+        direccion.setText(Messages.get("pacientes.direccion"));
 
         jPanel122.setBackground(new java.awt.Color(69, 98, 255));
 
@@ -630,11 +631,11 @@ public class Generales extends Styles {
         title3.setBackground(new java.awt.Color(255, 255, 255));
         title3.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title3.setForeground(new java.awt.Color(0, 0, 0));
-        title3.setText("Nombres");
+        title3.setText(Messages.get("pacientes.nombres"));
 
         nombresText.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         nombresText.setForeground(new java.awt.Color(153, 153, 153));
-        nombresText.setText("Nombres");
+        nombresText.setText(Messages.get("pacientes.nombres"));
         nombresText.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
@@ -665,11 +666,11 @@ public class Generales extends Styles {
         title4.setBackground(new java.awt.Color(255, 255, 255));
         title4.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title4.setForeground(new java.awt.Color(0, 0, 0));
-        title4.setText("Apellidos");
+        title4.setText(Messages.get("pacientes.apellidos"));
 
         apellidosText.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         apellidosText.setForeground(new java.awt.Color(153, 153, 153));
-        apellidosText.setText("Apellidos");
+        apellidosText.setText(Messages.get("pacientes.apellidos"));
         apellidosText.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
@@ -700,11 +701,11 @@ public class Generales extends Styles {
         title5.setBackground(new java.awt.Color(255, 255, 255));
         title5.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title5.setForeground(new java.awt.Color(0, 0, 0));
-        title5.setText("F. Nacimiento");
+        title5.setText(Messages.get("paciente.fechaNacimiento"));
 
         fnacimientoText.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         fnacimientoText.setForeground(new java.awt.Color(153, 153, 153));
-        fnacimientoText.setText("F.Nacimiento");
+        fnacimientoText.setText(Messages.get("paciente.fechaNacimiento"));
         fnacimientoText.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
@@ -733,7 +734,7 @@ public class Generales extends Styles {
         title15.setBackground(new java.awt.Color(255, 255, 255));
         title15.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title15.setForeground(new java.awt.Color(0, 0, 0));
-        title15.setText("Edad");
+        title15.setText(Messages.get("pacientes.edad"));
 
         edadText.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         edadText.setForeground(new java.awt.Color(153, 153, 153));
