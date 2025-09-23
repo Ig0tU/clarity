@@ -362,7 +362,7 @@ public class NuevoPaciente extends Styles {
         title1.setBackground(new java.awt.Color(0, 0, 0));
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Nuevo paciente");
+        title1.setText(Messages.get("pacientes.nuevo"));
 
         containerButton.setkEndColor(new java.awt.Color(0, 0, 0));
         containerButton.setkFillBackground(false);
@@ -372,7 +372,7 @@ public class NuevoPaciente extends Styles {
         cancel.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         cancel.setForeground(new java.awt.Color(0, 0, 0));
         cancel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        cancel.setText("Cancelar");
+        cancel.setText(Messages.get("form.cancelar"));
         cancel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cancel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -535,7 +535,7 @@ public class NuevoPaciente extends Styles {
         jLabel3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Guardar");
+        jLabel3.setText(Messages.get("form.guardar"));
         jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout saveButtonLayout = new javax.swing.GroupLayout(saveButton);

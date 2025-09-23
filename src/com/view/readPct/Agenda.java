@@ -741,7 +741,7 @@ public class Agenda extends Styles {
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Patient consultations and schedule");
+        text1.setText(Messages.get("agenda.consultationsAndSchedule"));
 
         title1.setBackground(new java.awt.Color(0, 0, 0));
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
@@ -1035,7 +1035,7 @@ public class Agenda extends Styles {
         jLabel4.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(153, 153, 153));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Actions");
+        jLabel4.setText(Messages.get("agenda.actions"));
 
         javax.swing.GroupLayout jPanel103Layout = new javax.swing.GroupLayout(jPanel103);
         jPanel103.setLayout(jPanel103Layout);
@@ -1061,7 +1061,7 @@ public class Agenda extends Styles {
         jLabel5.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(153, 153, 153));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Consultation");
+        jLabel5.setText(Messages.get("agenda.consultation"));
 
         javax.swing.GroupLayout jPanel104Layout = new javax.swing.GroupLayout(jPanel104);
         jPanel104.setLayout(jPanel104Layout);
@@ -1317,7 +1317,7 @@ public class Agenda extends Styles {
 
         title2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title2.setForeground(new java.awt.Color(0, 0, 0));
-        title2.setText("Previous");
+        title2.setText(Messages.get("agenda.previous"));
 
         javax.swing.GroupLayout jPanel86Layout = new javax.swing.GroupLayout(jPanel86);
         jPanel86.setLayout(jPanel86Layout);
@@ -1353,7 +1353,7 @@ public class Agenda extends Styles {
         title3.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title3.setForeground(new java.awt.Color(0, 0, 0));
         title3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        title3.setText("Next");
+        title3.setText(Messages.get("agenda.next"));
 
         javax.swing.GroupLayout jPanel89Layout = new javax.swing.GroupLayout(jPanel89);
         jPanel89.setLayout(jPanel89Layout);
@@ -1381,7 +1381,7 @@ public class Agenda extends Styles {
         fecha.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 16)); // NOI18N
         fecha.setForeground(new java.awt.Color(0, 0, 0));
         fecha.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        fecha.setText("Month");
+        fecha.setText(Messages.get("agenda.month"));
 
         javax.swing.GroupLayout jPanel84Layout = new javax.swing.GroupLayout(jPanel84);
         jPanel84.setLayout(jPanel84Layout);

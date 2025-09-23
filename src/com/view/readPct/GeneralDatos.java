@@ -4,6 +4,7 @@ import com.context.ApplicationContext;
 import com.context.ChoosedPalette;
 import com.context.StateColors;
 import com.utils.CustomScrollBar;
+import com.utils.Messages;
 import com.utils.Styles;
 import com.utils.Tools;
 import javax.swing.border.MatteBorder;
@@ -71,9 +72,9 @@ public class GeneralDatos extends Styles {
             ApplicationContext.tratamientosTargets.forEach(tratamiento -> tratamientos.add(tratamiento));
 
             if (ApplicationContext.selectedPacient.getEstadoDeActividad().equals("activo")) {
-                status.setText("Activo");
+                status.setText(Messages.get("status.activo"));
             } else {
-                status.setText("Inactivo");
+                status.setText(Messages.get("status.inactivo"));
             }
             
             colorComponent(ApplicationContext.selectedAppereance);
@@ -333,11 +334,11 @@ public class GeneralDatos extends Styles {
         title2.setBackground(new java.awt.Color(0, 0, 0));
         title2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title2.setForeground(new java.awt.Color(0, 0, 0));
-        title2.setText("Estado");
+        title2.setText(Messages.get("pacientes.estado"));
 
         text2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text2.setForeground(new java.awt.Color(153, 153, 153));
-        text2.setText("Estado del paciente");
+        text2.setText(Messages.get("pacientes.estadoDesc"));
 
         statusContainer.setBackground(new java.awt.Color(255, 255, 255));
         statusContainer.setkEndColor(new java.awt.Color(204, 255, 204));
@@ -349,7 +350,7 @@ public class GeneralDatos extends Styles {
         status.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 14)); // NOI18N
         status.setForeground(new java.awt.Color(0, 255, 0));
         status.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        status.setText("Activo");
+        status.setText(Messages.get("status.activo"));
 
         javax.swing.GroupLayout statusContainerLayout = new javax.swing.GroupLayout(statusContainer);
         statusContainer.setLayout(statusContainerLayout);
@@ -502,11 +503,11 @@ public class GeneralDatos extends Styles {
         title1.setBackground(new java.awt.Color(0, 0, 0));
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Tratamientos del paciente");
+        title1.setText(Messages.get("pacientes.tratamientos"));
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Los tratamientos que recibe el paciente");
+        text1.setText(Messages.get("pacientes.tratamientosDesc"));
 
         jPanel19.setBackground(new java.awt.Color(255, 255, 255));
         jPanel19.setOpaque(false);
@@ -674,11 +675,11 @@ public class GeneralDatos extends Styles {
         title3.setBackground(new java.awt.Color(0, 0, 0));
         title3.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title3.setForeground(new java.awt.Color(0, 0, 0));
-        title3.setText("Agenda del paciente");
+        title3.setText(Messages.get("pacientes.agendaGeneral"));
 
         text4.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text4.setForeground(new java.awt.Color(153, 153, 153));
-        text4.setText("Agenda general del paciente");
+        text4.setText(Messages.get("pacientes.agendaGeneralDesc"));
 
         javax.swing.GroupLayout jPanel37Layout = new javax.swing.GroupLayout(jPanel37);
         jPanel37.setLayout(jPanel37Layout);
@@ -742,7 +743,7 @@ public class GeneralDatos extends Styles {
         agenda.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         agenda.setForeground(new java.awt.Color(0, 0, 0));
         agenda.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        agenda.setText("Ir a agenda");
+        agenda.setText(Messages.get("pacientes.irAgenda"));
         agenda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout buttonAgendaLayout = new javax.swing.GroupLayout(buttonAgenda);
@@ -789,7 +790,7 @@ public class GeneralDatos extends Styles {
 
         text6.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text6.setForeground(new java.awt.Color(153, 153, 153));
-        text6.setText("Fecha");
+        text6.setText(Messages.get("date.fecha"));
 
         javax.swing.GroupLayout jPanel42Layout = new javax.swing.GroupLayout(jPanel42);
         jPanel42.setLayout(jPanel42Layout);
@@ -815,7 +816,7 @@ public class GeneralDatos extends Styles {
 
         text5.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text5.setForeground(new java.awt.Color(153, 153, 153));
-        text5.setText("Hora");
+        text5.setText(Messages.get("date.hora"));
 
         javax.swing.GroupLayout jPanel43Layout = new javax.swing.GroupLayout(jPanel43);
         jPanel43.setLayout(jPanel43Layout);
@@ -857,7 +858,7 @@ public class GeneralDatos extends Styles {
 
         text7.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text7.setForeground(new java.awt.Color(153, 153, 153));
-        text7.setText("Consulta");
+        text7.setText(Messages.get("agenda.consultation"));
 
         javax.swing.GroupLayout jPanel44Layout = new javax.swing.GroupLayout(jPanel44);
         jPanel44.setLayout(jPanel44Layout);

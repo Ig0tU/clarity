@@ -2,6 +2,7 @@ package com.view.readPct;
 
 import com.context.ChoosedPalette;
 import com.model.ControlMensualModel;
+import com.utils.Messages;
 import com.utils.Styles;
 import com.utils.Tools;
 import com.view.createPacient.NewContext;
@@ -188,12 +189,12 @@ public class NuevoControlFields extends Styles {
 
         text1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         text1.setForeground(new java.awt.Color(153, 153, 153));
-        text1.setText("Agrega un nuevo control mensual para el paciente");
+        text1.setText(Messages.get("control.descripcion"));
 
         title1.setBackground(new java.awt.Color(0, 0, 0));
         title1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         title1.setForeground(new java.awt.Color(0, 0, 0));
-        title1.setText("Nuevo control mensual");
+        title1.setText(Messages.get("control.nuevoTitulo"));
 
         kGradientPanel3.setkBorderRadius(100);
         kGradientPanel3.setkEndColor(new java.awt.Color(69, 98, 255));
@@ -301,7 +302,7 @@ public class NuevoControlFields extends Styles {
         container1.add(jPanel45, java.awt.BorderLayout.LINE_START);
 
         textField1.setBackground(new java.awt.Color(255, 255, 255));
-        textField1.setText("Ingresar MD");
+        textField1.setText(Messages.get("control.ingresarMD"));
         textField1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField1.setOpaque(false);
         textField1.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -396,7 +397,7 @@ public class NuevoControlFields extends Styles {
         container4.add(jPanel51, java.awt.BorderLayout.LINE_START);
 
         textField4.setBackground(new java.awt.Color(255, 255, 255));
-        textField4.setText("Ingresar MX");
+        textField4.setText(Messages.get("control.ingresarMX"));
         textField4.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField4.setOpaque(false);
         textField4.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -501,7 +502,7 @@ public class NuevoControlFields extends Styles {
         container5.add(jPanel53, java.awt.BorderLayout.LINE_START);
 
         textField5.setBackground(new java.awt.Color(255, 255, 255));
-        textField5.setText("Ingresar cadenas");
+        textField5.setText(Messages.get("control.ingresarCadenas"));
         textField5.setToolTipText("");
         textField5.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField5.setOpaque(false);
@@ -514,7 +515,7 @@ public class NuevoControlFields extends Styles {
 
         title4.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title4.setForeground(new java.awt.Color(0, 0, 0));
-        title4.setText("Cadenas");
+        title4.setText(Messages.get("control.cadenas"));
 
         advertenciaCadenas.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         advertenciaCadenas.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
@@ -604,7 +605,7 @@ public class NuevoControlFields extends Styles {
         container6.add(jPanel55, java.awt.BorderLayout.LINE_START);
 
         textField6.setBackground(new java.awt.Color(255, 255, 255));
-        textField6.setText("Ingresar hules");
+        textField6.setText(Messages.get("control.ingresarHules"));
         textField6.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField6.setOpaque(false);
         textField6.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -616,7 +617,7 @@ public class NuevoControlFields extends Styles {
 
         title5.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title5.setForeground(new java.awt.Color(0, 0, 0));
-        title5.setText("Hules");
+        title5.setText(Messages.get("control.hules"));
 
         advertenciaNombre5.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         advertenciaNombre5.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
@@ -702,7 +703,7 @@ public class NuevoControlFields extends Styles {
         container7.add(jPanel57, java.awt.BorderLayout.LINE_START);
 
         textField7.setBackground(new java.awt.Color(255, 255, 255));
-        textField7.setText("Ingresar observaciones");
+        textField7.setText(Messages.get("control.ingresarObservaciones"));
         textField7.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 1, 0, new java.awt.Color(204, 204, 204)));
         textField7.setOpaque(false);
         textField7.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -714,7 +715,7 @@ public class NuevoControlFields extends Styles {
 
         title6.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         title6.setForeground(new java.awt.Color(0, 0, 0));
-        title6.setText("Observaciones");
+        title6.setText(Messages.get("medical.observaciones"));
 
         advertenciaNombre6.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         advertenciaNombre6.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
